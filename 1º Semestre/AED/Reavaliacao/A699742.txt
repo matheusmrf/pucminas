@@ -1,0 +1,58 @@
+Enunciado:
+
+O estado de Minas Gerais é dividido em dez regiões.
+Para auxiliar a Secretaria de Saúde, um programa
+precisa ser feito para levantar a situação mais
+detalhada das distribuições de leitos disponíveis.
+Há três tipos de leitos: enfermaria (1), cuidados 
+intensivos (2) e cuidados intensivos para 
+necessidades respiratórias (3).
+Cada região deverá enviar um arquivo com o resumo
+diário dos leitos que tiver, informando para cada 
+tipo, as quantidades de ocupados e de livres.
+Toda vez que um arquivo chegar, o programa deverá
+ser executado para informar a situação mais próxima
+à realidade.
+
+Dados:
+
+Arquivo MG_RR contendo a relação de 
+regiões que já informaram seus dados.
+
+Arquivos individuais para cada região
+contendo as distribuições de leitos, 
+segundo o tipo e as quantidades de 
+ocupados e livres, organizados da 
+seguinte maneira:
+
+nome do arquivo: MG_Rx, onde x varia de [0:9]
+tipo de leito  : y    , onde y varia de [1:3]
+leitos ocupados: u    , onde u varia de [0:n]
+leitos livres  : v    , onde v varia de [0:m]
+
+Nota: A região poderá informar mais de um tipo
+      de leito no mesmo arquivo.
+  
+Resultados:
+
+Deseja-se saber:
+
+a.) total de leitos ocupados no estado segundo o tipo;
+b.) total de leitos livres por região  segundo o tipo;
+c.) a região com menos leitos para necessidades
+    respiratórias no estado;
+d.) a porcentagem de leitos para enfermarias 
+    no total de leitos do estado.
+
+Completar o esboço de programa sugerido (A.cpp) para
+atender a todos os requisitos.
+    
+
+Observações:
+- Todos os dados serão fornecidos em arquivos.
+- Todos os resultados deverão ser gravados em arquivo.
+- O arquivo pode não ter todos os tipos de leitos.
+- Testar se todos os dados são válidos.
+- Cada arquivo poderá ser lido apenas uma vez.
+- Cada resposta deverá ser fornecida por uma função.
+

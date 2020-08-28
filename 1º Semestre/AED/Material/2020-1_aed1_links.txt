@@ -1,0 +1,130 @@
+PUC-Minas
+Instituto de Ciências Exatas e Informática
+Curso de Ciência da Computação
+Algoritmos e Estruturas de Dados I
+
+Links recomendados
+
+  
+http://www.jgrasp.org/
+    jGrasp v2.0.6_02 (29/01/2020)
+    Ferramenta para edição e compilação  
+    Obs.: O programa também poderá ser encontrado para cópia local em 
+          ftp://ftp.pucmg.br/pub/Computação/Mais_Utilizados/Programacao_Software/JGrasp
+          
+          Versões provisórias (betas), ainda que mais novas, 
+          também poderão ser usadas, 
+          porém, por ainda estarem em desenvolvimento
+          poderão apresentar erros; por isso,
+          ainda será recomendável utilizar a versão indicada. 
+          A compatibilidade com a versão do Java ainda não
+          está bem definida. Aguarda-se uma nova versão mais
+          compatível, e enquanto isso a versão atual já servirá.
+
+http://www.pucminas.br -> SGA
+    Pacote para facilitar entrada e saída (io.h)
+    2020-1_aed1_exemplos_guias.zip
+    na pasta
+    2020-1_aed1_Lista_00
+
+http://www.pucminas.br -> SGA
+    Pacote para introduzir conceitos de programação (karel.h)
+    2020-1_aed1_karel.zip
+    na pasta
+    2020-1_aed1_Guia_00.
+    Obs.: A documentação de programa também poderá ser encontrado para cópia local em 
+          ftp://ftp.pucmg.br/pub/Computação/Mais_Utilizados/Programacao_Software/CodeBlocks/
+
+    IMPORTANTE:
+
+          Os arquivos
+ 
+             io.h 
+             e 
+             karel.h 
+
+          poderão ser copiados, para a pasta do compilador 
+          /.../include
+          ou poderão ser mantidos na mesma pasta onde 
+          seus respectivos programas tiverem necessidade de uso.
+
+
+Para artigo(s) (Provisório):
+
+MARCONDES, C. H.; MENDONÇA, M. A. R.; MALHEIROS, L. R. 
+Uma proposta de modelo de representação do conhecimento 
+contido no texto de artigos científicos publicados na web 
+em formato legível por programas. Disponível em 
+http://www.brapci.inf.br/index.php/res/v/5968. Acessado em 01/08/2019.
+
+
+Dicas úteis:
+
+Compilador GCC para Ubuntu Linux
+
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install build-essential
+
+$ sudo apt-get install manpages-dev man-db manpages-posix-dev
+
+Editor e ambiente para Codeblocks
+
+ftp://ftp.pucmg.br/pub/Computacao/Mais_Utilizados/Programacao_Software/CodeBlocks/
+
+    OBSERVAÇÃO:
+    O ambiente de desenvolvimento Codeblocks v17.12
+    é disponível para Windows e Linux, mas o compilador
+    que o acompanha pode não estar atualizado.
+    É recomendável atualizar o compilador.
+
+Compilador MinGW-GCC para Windows
+
+https://sourceforge.net/projects/mingw-w64/files/
+    MinGW-W64 GCC v8_2_0 (24/05/2019)
+    https://mingw-w64.org/doku.php/download
+    http://www.mingw.org/category/wiki/download
+
+    OBSERVAÇÃO:
+    Devido às diferenças de versões, 
+    ainda é recomendado atualizar o compilador
+    para a versão disponível em laboratórios da PUC-Minas.
+    Há versões mais novas e também compatíveis,
+    mas ainda não passaram por avaliações de compatibilidade.
+
+Compiladores online:
+
+https://www.onlinegdb.com/online_c_compiler
+https://www.onlinegdb.com/online_c++_compiler
+https://www.jdoodle.com/
+https://www.tutorialspoint.com/compile_c_online.php
+https://www.codechef.com/ide
+https://www.ideone.com
+https://www.compileonline.com
+https://codenvy.io
+https://paiza.io
+
+    OBSERVAÇÃO:
+    Compiladores online são opções para testes rápidos.
+    Recomenda-se identificar a versão do compilador 
+    antes de uso, para que o reaproveitamento futuro
+    do código em outro sistema possa ser viabilizado.
+
+
+Opcionais:
+
+http://flowgorithm.org/download/index.htm
+    Flowgorithm v2.22
+    Ferramenta para edição e testes de fluxogramas   (opcional)
+
+
+http://findbugs.sourceforge.net/downloads.html
+    FindBugs v3.0.1
+    Aperfeiçoar código escrito em Java (opcional)
+
+
+Qualquer dúvida sobre o uso dos programas acima
+deverá ser encaminhada ao professor, aos monitores
+ou pessoal técnico do Instituto de Ciências Exatas 
+e Informática.
+ 
