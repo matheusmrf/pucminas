@@ -30,8 +30,8 @@ class main {
         }
     }
 
-    // Verifica se duas strings passadas por parâmetro são iguais e retorna true em
-    // caso verdadeiro
+    /* Verifica se duas strings passadas por parâmetro são iguais e retorna true em
+     caso verdadeiro*/
     public static boolean igual(String fraseA, String fraseB) {
         boolean ehIgual = true;
         if (fraseA.length() != fraseB.length()) {
@@ -48,7 +48,7 @@ class main {
         return ehIgual;
     }
 
-    // Retorna um array com os valores de entradas que serão colocadas na expressão
+    // Retorna um array com os valores de entradas
     public static int[] entradas(String fraseSemEspaco) {
         int qtEntradas = Character.getNumericValue(fraseSemEspaco.charAt(0));
         int[] entradas = new int[qtEntradas];
@@ -170,8 +170,8 @@ class main {
         return padraoPertence;
     }
 
-    // Troca uma string booleana no padrão da variável validacoes pelo seu
-    // respectivo valor booleano, no indice dado
+    /* Troca uma string booleana no padrão da variável validacoes pelo seu
+     respectivo valor booleano, no indice dado */
     public static String trocaBooleano(String expressao, int indiceFrase, int indicePadrao) {
         String novaExpressao = "";
         for (int i = 0; i < expressao.length(); i++) {

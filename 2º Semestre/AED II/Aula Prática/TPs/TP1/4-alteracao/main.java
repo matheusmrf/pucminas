@@ -1,61 +1,61 @@
 import java.util.Random;
 
-class main{
+class main {
 
-        public static void main(String[] args){
-		Random gerador = new Random();
-		gerador.setSeed(4);
-		
+        public static void main(String[] args) {
+                Random gerador = new Random();
+                gerador.setSeed(4);
+
                 String[] entrada = new String[1000];
                 String linha;
                 int numEntrada = 0;
 
-                do{
+                do {
                         entrada[numEntrada] = MyIO.readLine();
-                } while(igual(entrada[numEntrada++], "FIM") == false);
+                } while (igual(entrada[numEntrada++], "FIM") == false);
                 numEntrada--;
 
-                for(int i=0; i<numEntrada; i++){
-                        // Pega duas letras aleatórias de uma frase passada por parâmetro e altera a incidência de uma pela outra
+                for (int i = 0; i < numEntrada; i++) {
                         MyIO.println(alterarAleatoriamente(entrada[i], gerador));
                 }
 
         }
 
-        // Retorna a frase passada pelo parâmetro com um caractere sortido alterado por outro caractere sortido 
-        public static String alterarAleatoriamente(String fraseOriginal, Random gerador){
-		String fraseAlterada = "";
-		char letra = sorteiaLetra(gerador),
-		     trocada = sorteiaLetra(gerador);
-                for(int i=0; i<fraseOriginal.length(); i++){
-			if(fraseOriginal.charAt(i) == letra){
-                        	fraseAlterada += trocada;
-			} else{
-				fraseAlterada += fraseOriginal.charAt(i);
-			}
+        // Retorna a palavra com carecteres sortidos
+        public static String alterarAleatoriamente(String palavraOriginal, Random gerador) {
+                String palavraAlt = "";
+                char letra = sorteiaLetra(gerador), trocada = sorteiaLetra(gerador);
+                for (int i = 0; i < palavraOriginal.length(); i++) {
+                        if (palavraOriginal.charAt(i) == letra) {
+                                palavraAlt += trocada;
+                        } else {
+                                palavraAlt += palavraOriginal.charAt(i);
+                        }
                 }
-                return fraseAlterada;
+                return palavraAlt;
         }
 
-	// Sorteia uma letra aleatóriamente entre 'a' e 'z'
-	public static char sorteiaLetra(Random gerador){
-		return (char)('a' + (Math.abs(gerador.nextInt())) % 26);
-	}
+        public static char sorteiaLetra(Random gerador) {
+                return (char) ('a' + (Math.abs(gerador.nextInt())) % 26);
+        }
 
-        // Verifica se duas strings passadas por parâmetro são iguais e retorna true em caso verdadeiro
-        public static boolean igual(String fraseA, String fraseB){
+        /*
+         * Verifica se duas strings passadas por parâmetro são iguais e retorna true
+         * caso seja verdadeiro
+         */
+        public static boolean igual(String palavraA, String palavraB) {
                 boolean ehIgual = true;
-                if(fraseA.length() != fraseB.length()){
+                if (palavraA.length() != palavraB.length()) {
                         ehIgual = false;
-                } else{
+                } else {
                         int i = 0;
-                        while(i<fraseA.length() && ehIgual){
-                                if(fraseA.charAt(i) != fraseB.charAt(i)){
+                        while (i < palavraA.length() && ehIgual) {
+                                if (palavraA.charAt(i) != palavraB.charAt(i)) {
                                         ehIgual = false;
                                 }
                                 i++;
                         }
                 }
                 return ehIgual;
-	}
+        }
 }

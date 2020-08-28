@@ -1,41 +1,59 @@
-public class main {
+class main {
+    public static void main(String[] args){
+            String[] entrada = new String[1000];
+            String linha;
+            int numEntrada = 0;
 
-    public static boolean isFim(String s){
-        return (s.length() == 3 && s.charAt(0) == 'F' && s.charAt(1) == 'I' && s.charAt(2) == 'M');
-    }
-    public static void main(String[]args){
-        String teste;
-        teste  = MyIO.readLine();
-            do {
-                boolean verifyresultado = isPoli(teste);
-                if (verifyresultado) System.out.println("SIM");
-                else System.out.println("NAO");
-            teste = MyIO.readLine();
-    
-    
-            } while(isFim(teste) == false);
-    }
+            do{
+                    entrada[numEntrada] = MyIO.readLine();
+            } while(igual(entrada[numEntrada++], "FIM") == false);
+            numEntrada--;
 
-    public static boolean isPoli(String s) {
-        return ehPalindromo(s, 0, s.length() - 1);
+            for(int i=0; i<numEntrada; i++){
+                    if(ehPalindromo(entrada[i])){
+                            MyIO.println("SIM");
+                    } else{
+                            MyIO.println("NAO");
+                    }
+            }
     }
 
-    public static boolean isPoli(String s, int i, int f) {
-        boolean resp;
-        if (i < (f / 2)) {
-            resp = true;
+public static boolean ehPalindromo(String palavra){
+    return ehPalindromo(palavra, 0);
+}
+
+public static boolean ehPalindromo(String palavra, int i){
+            boolean ehPalindromo = true;
+            int ultimoChar = palavra.length()-1;
+            
+    if(i>=(double)ultimoChar/2){
+        ehPalindromo = true;
+    } else if(palavra.charAt(i) != palavra.charAt(ultimoChar-i)){
+        ehPalindromo = false;
+    } else{
+        ehPalindromo = ehPalindromo(palavra, i+1);
+    }
+            return ehPalindromo;
+    }
+
+public static boolean igual(String palavraA, String palavraB){
+    return igual(palavraA, palavraB, 0);
+}        
+
+public static boolean igual(String palavraA, String palavraB, int i){
+            boolean ehIgual = true;
+            if(palavraA.length() != palavraB.length()){
+                    ehIgual = false;
+            } else if(i<palavraA.length()){
+        if(palavraA.charAt(i) != palavraB.charAt(i)){
+            ehIgual = false;
+        } else{
+            ehIgual = igual(palavraA, palavraB, i+1);
         }
-
-        if (s.charAt(i) != s.charAt(f)) {
-
-            return resp = false;
-        } else {
-            if (i >= (s.length() - 1))
-                return true;
-            resp = ehPalindromo(s, i + 1, f - 1);
-
-        }
-
-        return resp;
+    } else{
+        ehIgual = true;
+    }
+            return ehIgual;
     }
 }
+                

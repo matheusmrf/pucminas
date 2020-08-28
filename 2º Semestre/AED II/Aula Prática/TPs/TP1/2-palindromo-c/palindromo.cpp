@@ -15,7 +15,7 @@ tamanho=0;
 i=0;
 ao=0;
 
-//scanf("%s",&Palin);
+//recebe a palavra
 fgets(Palin, sizeof(Palin), stdin);
 
 if(strcmp (fim,Palin) == 0){
@@ -24,6 +24,7 @@ if(strcmp (fim,Palin) == 0){
 
 tamanho=strlen(Palin) - 1;
 
+//verifica se a palavra é palindromo
 for(i=0;i<tamanho;i++){
     if(Palin[i]!=Palin[tamanho-i-1]){
         ao=1;

@@ -10,21 +10,23 @@ class main {
         numEntrada--;
 
         for (int i = 0; i < numEntrada; i++) {
-            // Retorna SIM caso seja verdadeira e NAO caso seja falso as seguintes
-            // proposições: Se a frase é composta somente por vogais; Se é composta somente
-            // somente por consoantes; Se é um número inteiro; Se é um número real
+            /*
+             * Retorna SIM caso seja verdadeira e NAO caso seja falso caso
+             *  a palavra seja composta somente por vogais, por
+             consoantes. Se for número inteiro ou se for um número real
+             */
             MyIO.println(resposta(soVogais(entrada[i])) + " " + resposta(soConsoantes(entrada[i])) + " "
                     + resposta(ehInteiro(entrada[i])) + " " + resposta(ehReal(entrada[i])));
         }
 
     }
 
-    // Retorna true se a frase passada por parâmetro for composta somente por vogais
-    public static boolean soVogais(String frase) {
+    // Retorna true se a palavra for composta somente por vogais
+    public static boolean soVogais(String palavra) {
         boolean soVogais = true;
         int i = 0;
-        while (soVogais && i < frase.length()) {
-            if (vogalOuConsoante(frase.charAt(i)) != 'V') {
+        while (soVogais && i < palavra.length()) {
+            if (vogalOuConsoante(palavra.charAt(i)) != 'V') {
                 soVogais = false;
             }
             i++;
@@ -32,13 +34,12 @@ class main {
         return soVogais;
     }
 
-    // Retorna true se a frase passada por parâmetro for composta somente por
-    // consoantes
-    public static boolean soConsoantes(String frase) {
+    // Retorna true se a palavra for composta somente por consoantes
+    public static boolean soConsoantes(String palavra) {
         boolean soConsoantes = true;
         int i = 0;
-        while (soConsoantes && i < frase.length()) {
-            if (vogalOuConsoante(frase.charAt(i)) != 'C') {
+        while (soConsoantes && i < palavra.length()) {
+            if (vogalOuConsoante(palavra.charAt(i)) != 'C') {
                 soConsoantes = false;
             }
             i++;
@@ -46,39 +47,40 @@ class main {
         return soConsoantes;
     }
 
-    // Retorna true se a frase passada por parâmetro for composta por um número
+    // Retorna true se a palavra for um número
     // inteiro
-    public static boolean ehInteiro(String frase) {
+    public static boolean ehInteiro(String palavra) {
         boolean ehInteiro = true;
         try {
-            Integer.parseInt(frase);
+            Integer.parseInt(palavra);
         } catch (NumberFormatException numberFormatException) {
             ehInteiro = false;
         }
         return ehInteiro;
     }
 
-    // Retorna true se a frase passada por parâmetro for composta por um número real
-    public static boolean ehReal(String frase) {
+    // Retorna true se a palavra for um número
+    // real
+    public static boolean ehReal(String palavra) {
         boolean ehReal = true;
         try {
-            Double.parseDouble(trocaVirgula(frase));
+            Double.parseDouble(trocaVirgula(palavra));
         } catch (NumberFormatException numberFormatException) {
             ehReal = false;
         }
         return ehReal;
     }
 
-    // Verifica se duas strings passadas por parâmetro são iguais e retorna true em
+    // Verifica se duas strings são iguais e retorna true em
     // caso verdadeiro
-    public static boolean igual(String fraseA, String fraseB) {
+    public static boolean igual(String palavraA, String palavraB) {
         boolean ehIgual = true;
-        if (fraseA.length() != fraseB.length()) {
+        if (palavraA.length() != palavraB.length()) {
             ehIgual = false;
         } else {
             int i = 0;
-            while (i < fraseA.length() && ehIgual) {
-                if (fraseA.charAt(i) != fraseB.charAt(i)) {
+            while (i < palavraA.length() && ehIgual) {
+                if (palavraA.charAt(i) != palavraB.charAt(i)) {
                     ehIgual = false;
                 }
                 i++;
@@ -101,7 +103,7 @@ class main {
         return resposta;
     }
 
-    // Método que retorna true caso o caractere passado por parâmetro seja uma vogal
+    // Método que retorna true caso o caractere seja uma vogal
     public static boolean ehVogal(char letra) {
         boolean ehVogal = false;
         if ((letra == 'a' || letra == 'A' || letra == 'e' || letra == 'E' || letra == 'i' || letra == 'I'
@@ -111,20 +113,20 @@ class main {
         return ehVogal;
     }
 
-    // Método que troca , por . para verificação de número real
-    public static String trocaVirgula(String frase) {
-        String fraseNova = "";
-        for (int i = 0; i < frase.length(); i++) {
-            if (frase.charAt(i) == ',') {
-                fraseNova += ".";
+    // Método que troca , por . para verificação de um numero real
+    public static String trocaVirgula(String palavra) {
+        String palavraNova = "";
+        for (int i = 0; i < palavra.length(); i++) {
+            if (palavra.charAt(i) == ',') {
+                palavraNova += ".";
             } else {
-                fraseNova += frase.charAt(i);
+                palavraNova += palavra.charAt(i);
             }
         }
-        return fraseNova;
+        return palavraNova;
     }
 
-    // Retorna SIM ou NAO dependendo do valor booleano passado por parâmetro
+    // Retorna SIM ou NAO dependendo do valor booleano 
     public static String resposta(boolean valor) {
         String retorno = "";
         if (valor) {
