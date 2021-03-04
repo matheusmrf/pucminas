@@ -1,0 +1,2469 @@
+|ula_32b
+a[0] => ula_1b:ula0.a1
+a[1] => ula_1b:ulas_30:1:ula30.a1
+a[2] => ula_1b:ulas_30:2:ula30.a1
+a[3] => ula_1b:ulas_30:3:ula30.a1
+a[4] => ula_1b:ulas_30:4:ula30.a1
+a[5] => ula_1b:ulas_30:5:ula30.a1
+a[6] => ula_1b:ulas_30:6:ula30.a1
+a[7] => ula_1b:ulas_30:7:ula30.a1
+a[8] => ula_1b:ulas_30:8:ula30.a1
+a[9] => ula_1b:ulas_30:9:ula30.a1
+a[10] => ula_1b:ulas_30:10:ula30.a1
+a[11] => ula_1b:ulas_30:11:ula30.a1
+a[12] => ula_1b:ulas_30:12:ula30.a1
+a[13] => ula_1b:ulas_30:13:ula30.a1
+a[14] => ula_1b:ulas_30:14:ula30.a1
+a[15] => ula_1b:ulas_30:15:ula30.a1
+a[16] => ula_1b:ulas_30:16:ula30.a1
+a[17] => ula_1b:ulas_30:17:ula30.a1
+a[18] => ula_1b:ulas_30:18:ula30.a1
+a[19] => ula_1b:ulas_30:19:ula30.a1
+a[20] => ula_1b:ulas_30:20:ula30.a1
+a[21] => ula_1b:ulas_30:21:ula30.a1
+a[22] => ula_1b:ulas_30:22:ula30.a1
+a[23] => ula_1b:ulas_30:23:ula30.a1
+a[24] => ula_1b:ulas_30:24:ula30.a1
+a[25] => ula_1b:ulas_30:25:ula30.a1
+a[26] => ula_1b:ulas_30:26:ula30.a1
+a[27] => ula_1b:ulas_30:27:ula30.a1
+a[28] => ula_1b:ulas_30:28:ula30.a1
+a[29] => ula_1b:ulas_30:29:ula30.a1
+a[30] => ula_1b:ulas_30:30:ula30.a1
+a[31] => ula_1b:ula31.a1
+b[0] => ula_1b:ula0.b1
+b[1] => ula_1b:ulas_30:1:ula30.b1
+b[2] => ula_1b:ulas_30:2:ula30.b1
+b[3] => ula_1b:ulas_30:3:ula30.b1
+b[4] => ula_1b:ulas_30:4:ula30.b1
+b[5] => ula_1b:ulas_30:5:ula30.b1
+b[6] => ula_1b:ulas_30:6:ula30.b1
+b[7] => ula_1b:ulas_30:7:ula30.b1
+b[8] => ula_1b:ulas_30:8:ula30.b1
+b[9] => ula_1b:ulas_30:9:ula30.b1
+b[10] => ula_1b:ulas_30:10:ula30.b1
+b[11] => ula_1b:ulas_30:11:ula30.b1
+b[12] => ula_1b:ulas_30:12:ula30.b1
+b[13] => ula_1b:ulas_30:13:ula30.b1
+b[14] => ula_1b:ulas_30:14:ula30.b1
+b[15] => ula_1b:ulas_30:15:ula30.b1
+b[16] => ula_1b:ulas_30:16:ula30.b1
+b[17] => ula_1b:ulas_30:17:ula30.b1
+b[18] => ula_1b:ulas_30:18:ula30.b1
+b[19] => ula_1b:ulas_30:19:ula30.b1
+b[20] => ula_1b:ulas_30:20:ula30.b1
+b[21] => ula_1b:ulas_30:21:ula30.b1
+b[22] => ula_1b:ulas_30:22:ula30.b1
+b[23] => ula_1b:ulas_30:23:ula30.b1
+b[24] => ula_1b:ulas_30:24:ula30.b1
+b[25] => ula_1b:ulas_30:25:ula30.b1
+b[26] => ula_1b:ulas_30:26:ula30.b1
+b[27] => ula_1b:ulas_30:27:ula30.b1
+b[28] => ula_1b:ulas_30:28:ula30.b1
+b[29] => ula_1b:ulas_30:29:ula30.b1
+b[30] => ula_1b:ulas_30:30:ula30.b1
+b[31] => ula_1b:ula31.b1
+binvert => ula_1b:ula0.binvert1
+binvert => ula_1b:ula0.carryin1
+binvert => ula_1b:ulas_30:1:ula30.binvert1
+binvert => ula_1b:ulas_30:1:ula30.carryin1
+binvert => ula_1b:ulas_30:2:ula30.binvert1
+binvert => ula_1b:ulas_30:2:ula30.carryin1
+binvert => ula_1b:ulas_30:3:ula30.binvert1
+binvert => ula_1b:ulas_30:3:ula30.carryin1
+binvert => ula_1b:ulas_30:4:ula30.binvert1
+binvert => ula_1b:ulas_30:4:ula30.carryin1
+binvert => ula_1b:ulas_30:5:ula30.binvert1
+binvert => ula_1b:ulas_30:5:ula30.carryin1
+binvert => ula_1b:ulas_30:6:ula30.binvert1
+binvert => ula_1b:ulas_30:6:ula30.carryin1
+binvert => ula_1b:ulas_30:7:ula30.binvert1
+binvert => ula_1b:ulas_30:7:ula30.carryin1
+binvert => ula_1b:ulas_30:8:ula30.binvert1
+binvert => ula_1b:ulas_30:8:ula30.carryin1
+binvert => ula_1b:ulas_30:9:ula30.binvert1
+binvert => ula_1b:ulas_30:9:ula30.carryin1
+binvert => ula_1b:ulas_30:10:ula30.binvert1
+binvert => ula_1b:ulas_30:10:ula30.carryin1
+binvert => ula_1b:ulas_30:11:ula30.binvert1
+binvert => ula_1b:ulas_30:11:ula30.carryin1
+binvert => ula_1b:ulas_30:12:ula30.binvert1
+binvert => ula_1b:ulas_30:12:ula30.carryin1
+binvert => ula_1b:ulas_30:13:ula30.binvert1
+binvert => ula_1b:ulas_30:13:ula30.carryin1
+binvert => ula_1b:ulas_30:14:ula30.binvert1
+binvert => ula_1b:ulas_30:14:ula30.carryin1
+binvert => ula_1b:ulas_30:15:ula30.binvert1
+binvert => ula_1b:ulas_30:15:ula30.carryin1
+binvert => ula_1b:ulas_30:16:ula30.binvert1
+binvert => ula_1b:ulas_30:16:ula30.carryin1
+binvert => ula_1b:ulas_30:17:ula30.binvert1
+binvert => ula_1b:ulas_30:17:ula30.carryin1
+binvert => ula_1b:ulas_30:18:ula30.binvert1
+binvert => ula_1b:ulas_30:18:ula30.carryin1
+binvert => ula_1b:ulas_30:19:ula30.binvert1
+binvert => ula_1b:ulas_30:19:ula30.carryin1
+binvert => ula_1b:ulas_30:20:ula30.binvert1
+binvert => ula_1b:ulas_30:20:ula30.carryin1
+binvert => ula_1b:ulas_30:21:ula30.binvert1
+binvert => ula_1b:ulas_30:21:ula30.carryin1
+binvert => ula_1b:ulas_30:22:ula30.binvert1
+binvert => ula_1b:ulas_30:22:ula30.carryin1
+binvert => ula_1b:ulas_30:23:ula30.binvert1
+binvert => ula_1b:ulas_30:23:ula30.carryin1
+binvert => ula_1b:ulas_30:24:ula30.binvert1
+binvert => ula_1b:ulas_30:24:ula30.carryin1
+binvert => ula_1b:ulas_30:25:ula30.binvert1
+binvert => ula_1b:ulas_30:25:ula30.carryin1
+binvert => ula_1b:ulas_30:26:ula30.binvert1
+binvert => ula_1b:ulas_30:26:ula30.carryin1
+binvert => ula_1b:ulas_30:27:ula30.binvert1
+binvert => ula_1b:ulas_30:27:ula30.carryin1
+binvert => ula_1b:ulas_30:28:ula30.binvert1
+binvert => ula_1b:ulas_30:28:ula30.carryin1
+binvert => ula_1b:ulas_30:29:ula30.binvert1
+binvert => ula_1b:ulas_30:29:ula30.carryin1
+binvert => ula_1b:ulas_30:30:ula30.binvert1
+binvert => ula_1b:ulas_30:30:ula30.carryin1
+binvert => ula_1b:ula31.binvert1
+binvert => ula_1b:ula31.carryin1
+operation[0] => ula_1b:ula0.operation1[0]
+operation[0] => ula_1b:ulas_30:1:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:2:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:3:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:4:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:5:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:6:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:7:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:8:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:9:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:10:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:11:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:12:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:13:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:14:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:15:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:16:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:17:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:18:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:19:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:20:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:21:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:22:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:23:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:24:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:25:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:26:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:27:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:28:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:29:ula30.operation1[0]
+operation[0] => ula_1b:ulas_30:30:ula30.operation1[0]
+operation[0] => ula_1b:ula31.operation1[0]
+operation[1] => ula_1b:ula0.operation1[1]
+operation[1] => ula_1b:ulas_30:1:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:2:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:3:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:4:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:5:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:6:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:7:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:8:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:9:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:10:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:11:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:12:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:13:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:14:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:15:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:16:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:17:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:18:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:19:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:20:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:21:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:22:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:23:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:24:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:25:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:26:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:27:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:28:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:29:ula30.operation1[1]
+operation[1] => ula_1b:ulas_30:30:ula30.operation1[1]
+operation[1] => ula_1b:ula31.operation1[1]
+operation[2] => ula_1b:ula0.operation1[2]
+operation[2] => ula_1b:ulas_30:1:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:2:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:3:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:4:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:5:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:6:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:7:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:8:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:9:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:10:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:11:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:12:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:13:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:14:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:15:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:16:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:17:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:18:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:19:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:20:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:21:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:22:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:23:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:24:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:25:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:26:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:27:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:28:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:29:ula30.operation1[2]
+operation[2] => ula_1b:ulas_30:30:ula30.operation1[2]
+operation[2] => ula_1b:ula31.operation1[2]
+resultado[0] <= ula_1b:ula0.resultado1
+resultado[1] <= ula_1b:ulas_30:1:ula30.resultado1
+resultado[2] <= ula_1b:ulas_30:2:ula30.resultado1
+resultado[3] <= ula_1b:ulas_30:3:ula30.resultado1
+resultado[4] <= ula_1b:ulas_30:4:ula30.resultado1
+resultado[5] <= ula_1b:ulas_30:5:ula30.resultado1
+resultado[6] <= ula_1b:ulas_30:6:ula30.resultado1
+resultado[7] <= ula_1b:ulas_30:7:ula30.resultado1
+resultado[8] <= ula_1b:ulas_30:8:ula30.resultado1
+resultado[9] <= ula_1b:ulas_30:9:ula30.resultado1
+resultado[10] <= ula_1b:ulas_30:10:ula30.resultado1
+resultado[11] <= ula_1b:ulas_30:11:ula30.resultado1
+resultado[12] <= ula_1b:ulas_30:12:ula30.resultado1
+resultado[13] <= ula_1b:ulas_30:13:ula30.resultado1
+resultado[14] <= ula_1b:ulas_30:14:ula30.resultado1
+resultado[15] <= ula_1b:ulas_30:15:ula30.resultado1
+resultado[16] <= ula_1b:ulas_30:16:ula30.resultado1
+resultado[17] <= ula_1b:ulas_30:17:ula30.resultado1
+resultado[18] <= ula_1b:ulas_30:18:ula30.resultado1
+resultado[19] <= ula_1b:ulas_30:19:ula30.resultado1
+resultado[20] <= ula_1b:ulas_30:20:ula30.resultado1
+resultado[21] <= ula_1b:ulas_30:21:ula30.resultado1
+resultado[22] <= ula_1b:ulas_30:22:ula30.resultado1
+resultado[23] <= ula_1b:ulas_30:23:ula30.resultado1
+resultado[24] <= ula_1b:ulas_30:24:ula30.resultado1
+resultado[25] <= ula_1b:ulas_30:25:ula30.resultado1
+resultado[26] <= ula_1b:ulas_30:26:ula30.resultado1
+resultado[27] <= ula_1b:ulas_30:27:ula30.resultado1
+resultado[28] <= ula_1b:ulas_30:28:ula30.resultado1
+resultado[29] <= ula_1b:ulas_30:29:ula30.resultado1
+resultado[30] <= ula_1b:ulas_30:30:ula30.resultado1
+resultado[31] <= ula_1b:ula31.resultado1
+zero <= ula_1b:ula31.set1
+overflow <= ula_1b:ula31.overflow1
+
+
+|ula_32b|ula_1b:ula0
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:ula0|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula0|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula0|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula0|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula0|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:1:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:1:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:1:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:1:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:1:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:1:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:2:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:2:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:2:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:2:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:2:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:2:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:3:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:3:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:3:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:3:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:3:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:3:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:4:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:4:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:4:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:4:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:4:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:4:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:5:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:5:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:5:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:5:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:5:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:5:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:6:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:6:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:6:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:6:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:6:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:6:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:7:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:7:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:7:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:7:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:7:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:7:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:8:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:8:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:8:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:8:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:8:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:8:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:9:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:9:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:9:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:9:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:9:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:9:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:10:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:10:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:10:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:10:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:10:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:10:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:11:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:11:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:11:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:11:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:11:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:11:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:12:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:12:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:12:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:12:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:12:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:12:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:13:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:13:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:13:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:13:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:13:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:13:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:14:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:14:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:14:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:14:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:14:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:14:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:15:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:15:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:15:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:15:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:15:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:15:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:16:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:16:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:16:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:16:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:16:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:16:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:17:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:17:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:17:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:17:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:17:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:17:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:18:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:18:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:18:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:18:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:18:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:18:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:19:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:19:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:19:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:19:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:19:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:19:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:20:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:20:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:20:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:20:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:20:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:20:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:21:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:21:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:21:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:21:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:21:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:21:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:22:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:22:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:22:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:22:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:22:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:22:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:23:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:23:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:23:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:23:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:23:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:23:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:24:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:24:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:24:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:24:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:24:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:24:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:25:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:25:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:25:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:25:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:25:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:25:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:26:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:26:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:26:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:26:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:26:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:26:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:27:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:27:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:27:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:27:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:27:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:27:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:28:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:28:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:28:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:28:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:28:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:28:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:29:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:29:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:29:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:29:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:29:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:29:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:30:ula30
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:\ulas_30:30:ula30|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:30:ula30|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:30:ula30|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:30:ula30|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:\ulas_30:30:ula30|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula31
+a1 => resultAnd.IN0
+a1 => resultOr.IN0
+a1 => somador:somador1b.a
+b1 => resultAnd.IN1
+b1 => resultOr.IN1
+b1 => mult2x1:mux2.val
+less1 => mult4x1:mux4.r3
+binvert1 => mult2x1:mux2.binvert
+carryin1 => somador:somador1b.c
+operation1[0] => mult4x1:mux4.operation[0]
+operation1[1] => mult4x1:mux4.operation[1]
+operation1[2] => mult4x1:mux4.operation[2]
+resultado1 <= mult4x1:mux4.s
+set1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+overflow1 <= somador:somador1b.carry
+
+
+|ula_32b|ula_1b:ula31|mult2x1:mux2
+val => s.DATAB
+binvert => s.OUTPUTSELECT
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula31|somador:somador1b
+a => meio_somador:somador1.a
+b => meio_somador:somador1.b
+c => meio_somador:somador2.b
+soma <= meio_somador:somador2.soma
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula31|somador:somador1b|meio_somador:somador1
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula31|somador:somador1b|meio_somador:somador2
+a => soma.IN0
+a => carry.IN0
+a => soma.IN0
+b => soma.IN1
+b => carry.IN1
+b => soma.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32b|ula_1b:ula31|mult4x1:mux4
+r0 => Mux0.IN0
+r1 => Mux0.IN1
+r2 => Mux0.IN2
+r2 => Mux0.IN3
+r2 => Mux0.IN4
+r2 => Mux0.IN5
+r2 => Mux0.IN6
+r3 => Mux0.IN7
+operation[0] => Mux0.IN10
+operation[1] => Mux0.IN9
+operation[2] => Mux0.IN8
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
