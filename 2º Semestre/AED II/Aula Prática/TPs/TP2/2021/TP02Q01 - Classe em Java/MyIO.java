@@ -1,5 +1,8 @@
 import java.io.*;
+<<<<<<< HEAD
 import java.*;
+=======
+>>>>>>> master
 import java.nio.charset.*;
 
 class MyIO {
