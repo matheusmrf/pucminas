@@ -715,7 +715,7 @@ public class TP03Q01 {
     public static void createLog(Tempo tempo) {
         Arq.openWrite("DadosQuestao01.txt");
 
-        Arq.println("Matricula: 699742\tTempo: "+ tempo.getTime());
+        Arq.println("Matricula: 716417\tTempo: "+ tempo.getTime());
 
         Arq.close();
     }
