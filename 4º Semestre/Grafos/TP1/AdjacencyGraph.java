@@ -20,11 +20,10 @@ public class AdjacencyGraph{
     }
 
     public void addAresta(int origem, int destino, int peso){
-        if(arrestaAlreadyExists(origem, destino) && arrestaAlreadyExists(destino, origem)){
+        if(arrestaAlreadyExists(origem, destino)){
             System.out.println("Aresta já existe!");
         } else {
             matrizAdjacente[origem][destino] = peso;
-            matrizAdjacente[destino][origem] = peso;
         }
     }
 

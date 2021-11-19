@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Nome: Bruno Pena Baeta e Matheus Rangel de Figueiredo
 # Professor: Hugo Bastos de Paula
 # Matéria: Linguagens de Programação
@@ -10,7 +11,7 @@ from time import sleep
 ########################################### Funcao 1 ######################################################
 
 def func1():
-    # Formulário do produto
+    # Formulario do produto
     global preco, qtde, menor
     nome = input('Digite o nome do produto (string): ')
     t = True
