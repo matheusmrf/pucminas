@@ -1,5 +1,5 @@
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 class Aresta {
     Vertice origem;
@@ -13,19 +13,19 @@ class Aresta {
 
 class Vertice {
     String nome;
-    List<Aresta> adj;
+    List<Aresta> arestasAdjacentes;
 
     Vertice(String nome) {
         this.nome = nome;
-        this.adj = new ArrayList<Aresta>();
+        this.arestasAdjacentes = new ArrayList<>();
     }
 
-    void addAdj(Aresta e) {
-        adj.add(e);
+    void addAdjacente(Aresta e) {
+        arestasAdjacentes.add(e);
     }
 }
 
-// Grafo Direcional, Não Ponderado
+// Grafo Não Direcional, Não Ponderado
 public class Grafo {
     List<Vertice> vertices;
     List<Aresta> arestas;
@@ -41,25 +41,30 @@ public class Grafo {
         return v;
     }
 
-    boolean arrestaAlreadyExists(Aresta teste){
+    boolean arrestaAlreadyExists(Aresta teste) {
         for (int i = 0; i < arestas.size(); i++) {
             Aresta arrestaInIndex = arestas.get(i);
-            if(arrestaInIndex.destino.equals(teste.destino) && arrestaInIndex.origem.equals(teste.origem)){
+            if (arrestaInIndex.destino.equals(teste.destino) && arrestaInIndex.origem.equals(teste.origem)){
                 return true;
             }
         }
         return false;
     }
-    
+
     Aresta addAresta(Vertice origem, Vertice destino) {
         Aresta novaAresta = new Aresta(origem, destino);
+        Aresta novaArestaContraria = new Aresta(destino, origem);
 
-        if (arrestaAlreadyExists(novaAresta)){
+        if (arrestaAlreadyExists(novaAresta) || arrestaAlreadyExists(novaArestaContraria)) {
             System.out.println("Arresta já existe!");
             return null;
         }
-        origem.addAdj(novaAresta);
+
+        origem.addAdjacente(novaAresta);
+        destino.addAdjacente(novaArestaContraria);
+
         arestas.add(novaAresta);
+        arestas.add(novaArestaContraria);
         return novaAresta;
     }
 
@@ -67,7 +72,7 @@ public class Grafo {
         StringBuilder r = new StringBuilder();
         for (Vertice u : vertices) {
             r.append(u.nome).append(" -> ");
-            for (Aresta e : u.adj) {
+            for (Aresta e : u.arestasAdjacentes) {
                 Vertice v = e.destino;
                 r.append(v.nome).append(", ");
             }
