@@ -1,4 +1,4 @@
-public class main {
+public class as {
 
     //Altera a frase com a cifra de cesar
     public static char cesar(char c){
