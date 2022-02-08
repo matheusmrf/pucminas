@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red28\green27\blue26;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c14510\c14118\c13725;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Instala\'e7\'e3o de Ambiente de Desenvolvimento Flutter - Parte 2 - Flutter, Anndroid SDK e Studio\
+https://youtu.be/vx3dUKxW2kc\
+Instala\'e7\'e3o de Ambiente de Desenvolvimento Flutter - Parte 1 - VS Code, Github, JDK, Maven e Gradle\
+https://youtu.be/eCTP1A_946A\
+\
+Pacotes necess\'e1rios para configura\'e7\'e3o do ambiente de desenvolvimento m\'f3vel.\
+\
+\
+Java SE 8\
+https://www.oracle.com/java/technologies/javase-downloads.html#JDK8\
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html\
+\
+Apache Maven \
+https://maven.apache.org/download.cgi\
+http://ftp.unicamp.br/pub/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip\
+\
+Gracle Build Tool\
+https://gradle.org/install/\
+https://services.gradle.org/distributions/gradle-6.5.1-bin.zip\
+\
+Git SCM\
+https://git-scm.com/downloads\
+https://github.com/git-for-windows/git/releases/download/v2.27.0.windows.1/Git-2.27.0-64-bit.exe\
+\
+Android SDK\
+https://developer.android.com/studio#downloads\
+https://dl.google.com/android/repository/commandlinetools-win-6609375_latest.zip\
+\
+Android Studio\
+https://developer.android.com/studio#downloads\
+https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-windows.zip\
+\
+Visual Studio Code\
+https://code.visualstudio.com/\
+https://aka.ms/win32-x64-user-stable\
+\
+Genymotion\
+https://www.genymotion.com/desktop/\
+https://www.genymotion.com/download-handler?download=windows_novb_download_link\
+\
+Flutter\
+https://flutter.dev/docs/get-started/install/windows\
+\
+\
+Instala\'e7\'e3o:\
+\
+Neste exemplo eu irei instalar o ambiente de desenvolvimento no diret\'f3rio D:\\Dev.\
+\'c9 importante que o ambiente seja instalado em uma pasta que n\'e3o tenha nenhum espa\'e7o nem acento.\
+A pasta dever\'e1 ter acesso de leitura e escrita para todos os perfis.\
+\
+\
+\
+1 - Instalar os aplicativos na seguinte ordem:\
+\
+	1. Git SCM\
+	2. Visual Studio Code\
+	3. JDK8\
+	4. Maven\
+	5. Gracle\
+	\
+2 - Configurar as vari\'e1veis de ambiente (para todos os usu\'e1rios):\
+\
+JAVA_HOME=D:\\Dev\\Java\\jdk1.8\
+JAVA_JRE=D:\\Dev\\Java\\jre1.8\
+M2_HOME=D:\\Dev\\apache-maven-3.6.3\
+\
+3 - Adicionar ao Path (para todos os usu\'e1rios):\
+\
+D:\\Dev\\Microsoft VS Code\\bin;\
+D:\\Dev\\Git\\cmd;\
+D:\\Dev\\Java\\jdk1.8\\bin;\
+D:\\Dev\\gradle-6.5.1\\bin;\
+D:\\Dev\\apache-maven-3.6.3\\bin;\
+\
+4 - Instala\'e7\'e3o do ambiente de desenvolvimento M\'f3vel com Flutter:\
+\
+	1. Descomprimir android_sdk para a pasta:\
+		D:\\Dev\\android_sdk\\cmdline-tools  (\'e9 apenas um diret\'f3rio chamado tools).\
+	\
+	2. Descomprimir flutter para a pasta:\
+		D:\\Dev\
+		\
+	3. Configurar as vari\'e1veis de ambiente (para todos os usu\'e1rios):\
+\
+		ANDROID_HOME=D:\\Dev\\android_sdk\
+		ANDROID_SDK_ROOT=D:\\Dev\\android_sdk\
+		FLUTTER_HOME=D:\\Dev\\flutter\
+\
+	4. Adicionar ao Path (para todos os usu\'e1rios):\
+\
+		D:\\Dev\\android_sdk\\cmdline-tools\\tools\\bin;\
+		D:\\Dev\\android_sdk\\emulator;\
+		D:\\Dev\\android_sdk\\platform-tools;\
+		D:\\Dev\\flutter\\bin;\
+\
+5 - Configurar o SDK Manager (no Prompt de Comando):\
+\
+sdkmanager "build-tools;30.0.1" \
+sdkmanager "platform-tools"\
+sdkmanager "platforms;android-30"\
+sdkmanager ndk-bundle\
+sdkmanager --licenses\
+\
+6 - Configurar o Flutter (no Prompt de Comando):\
+\
+flutter config --android-sdk %ANDROID_HOM\
+flutter channel beta\
+flutter upgrade\
+flutter config --enable-web\
+flutter precache\
+\
+7 - Executar o Visual Studio Code e instalar a extens\'e3o chamada "Flutter".\
+\
+8 - Testar a instala\'e7\'e3o do Flutter:\
+\
+flutter doctor -v\
+\
+9 - Instalar o Android Studio:\
+\
+	1. Descomprimir o Android Studio na pasta D:\\Dev\
+	2. Iniciar o studio64.exe em D:\\Dev\\android-studio\\bin\
+	3. Selecionar para n\'e3o importar configura\'e7\'f5es.\
+	4. Selecionar o JDK j\'e1 instalado em D:\\Dev\\Java\\jdk1.8\
+	5. Selecionar o android_sdk j\'e1 instalado.\
+	6. Instalar o Plugin do Flutter no MarketPlace\
+	\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

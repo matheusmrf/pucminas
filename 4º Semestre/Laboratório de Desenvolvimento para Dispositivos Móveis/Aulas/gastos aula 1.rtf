@@ -1,0 +1,903 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fswiss\fcharset0 Helvetica;}{\f1\fswiss\fcharset0 Helvetica-Oblique;}{\f2\fnil\fcharset0 Menlo-Regular;}}
+{\colortbl ;\red191\green100\blue38;\red254\green187\blue91;\red153\green168\blue186;\red173\green169\blue32;\red88\green118\blue71;\red133\green96\blue154;\red253\green186\blue90;\red154\green169\blue186;\red253\green187\blue90;\red191\green100\blue37;\red86\green132\blue173;\red190\green99\blue37;\red255\green255\blue0;\red86\green133\blue173;\red0\green0\blue255;\red57\green57\blue57;\red38\green38\blue38;\red210\green0\blue53;\red109\green109\blue109;\red172\green168\blue31;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f0\fs24\lang22 Nesse modulo do curso o foco ser\'e1 customizar a apar\'eancia dos aplicativos usando mais widgets para melhorar a experi\'eancia do usu\'e1rio e tornar a interface mais bonita. \par
+\par
+Para isso vamos inicia o desenvolvimento de uma aplica\'e7\'e3o de gest\'e3o de gastos que ir\'e1 aplicar v\'e1rios desses conceitos. \par
+\par
+No google digite na busca flutter widget catalog \par
+\par
+Busque por layout na p\'e1gina do catalogo de widget \par
+\par
+Navegue por eles e aprenda as propriedades e m\'e9todos que cada um deles possui \par
+Fa\'e7a uma busca no search API Docs no canto superior da tela. Busque por list tile \par
+\par
+Alguns dos widgets mais usados s\'e3o MaterialApp / CupertinoApp, Scaffold, container, row, column, stack, card, ListView, GridView, ListTile, Text, image, Icon, textField, RaisendButton/ FaltButton, GestureDetect, InkWell.\par
+\par
+Bom agora que vimos de forma superficial alguns widgets, vamos iniciar nossa aplica\'e7\'e3o de controle de despesas e faremos tudo passo a passo. \par
+\par
+1- Crie um projeto novo do flutter \par
+2- Apague todo o c\'f3digo da aplica\'e7\'e3o de exemplo que a plataforma lhe d\'e1 \par
+3- cole o c\'f3digo abaixo no main.dart \par
+\par
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf1\par
+void \cf2 main\cf3 () \{\par
+  runApp(\cf2 MyApp\cf3 ())\cf1 ;\par
+\cf3\}\par
+\par
+\cf1 class \cf3 MyApp \cf1 extends \cf3 StatelessWidget \{\par
+  \cf4 @override\par
+  \cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+    \cf1 return \cf2 MaterialApp\cf3 (\par
+      title: \cf5 'Flutter Demo'\cf1 ,\par
+      \cf3 home: \cf2 MyHomePage\cf3 ()\cf1 ,\par
+    \cf3 )\cf1 ;\par
+  \cf3\}\par
+\}\par
+\par
+\cf1 class \cf3 MyHomePage \cf1 extends \cf3 StatefulWidget \{\par
+  \cf4 @override\par
+  \cf3 MyHomePageState \cf2 createState\cf3 () => \cf2 MyHomePageState\cf3 ()\cf1 ;\par
+\cf3\}\par
+\par
+\cf1 class \cf3 MyHomePageState \cf1 extends \cf3 State<MyHomePage> \{\par
+  \cf4 @override\par
+  \cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+\par
+    \cf1 return \cf2 Scaffold\cf3 (\par
+      appBar: \cf2 AppBar\cf3 (\par
+\par
+        title: \cf2 Text\cf3 (\cf5 'T\'edtulo'\cf3 )\cf1 ,\par
+      \cf3 )\cf1 ,\par
+      \cf3 body: \cf2 Center\cf3 (\par
+        child: \cf2 Column\cf3 (\par
+          mainAxisAlignment: MainAxisAlignment.\cf6 center\cf1 ,\par
+          \cf3 children: <Widget>[\par
+            \cf2 Text\cf3 (\cf5 'texto da p\'e1gina'\cf3 )\par
+          ]\cf1 ,\par
+        \cf3 )\cf1 ,\par
+      \cf3 )\cf1 ,\par
+      \cf3 )\cf1 ;\par
+  \cf3\}\par
+\}\cf1\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\cf3\par
+\cf0\par
+4-  Rode a aplica\'e7\'e3o no emulador para verificar se est\'e1 tudo ok. \par
+\par
+5- volte ao Main.dart e altere o body da aplica\'e7\'e3o para que ele tenha duas \'e1reas distintas de trabalho. Para ficar bonitinho nesse ponto iremos utilizar o widget Card. Criearemos um que ficar\'e1 no topo e conter\'e1 o Gr\'e1fico de gastos da semana da aplica\'e7\'e3o e utilizaremos um na parte inferior onde iremos colocar a lista dos gastos. \par
+\par
+\cf3 body: \cf2 Column\cf3 (\par
+  children: <Widget>[\par
+    \cf2 Card\cf3 (\par
+      child: \cf2 Text\cf3 (\cf5 'Cadastro'\cf3 )\cf1 ,\par
+    \cf3 )\cf1 ,\par
+    \cf2 Card\cf3 (child: \cf2 Text\cf3 (\cf5 'Lista de gastos'\cf3 )\cf1 ,\cf3 )\par
+  ]\cf1 ,\par
+\cf3 ))\cf1 ;\par
+\cf0\par
+6- Veja a aplica\'e7\'e3o no emulador. Repare que perto do texto existe uma sobra em relevo que o envolve. Esse \'e9 o widget de cart\'e3o. Por\'e9m ele est\'e1 muito pequeno e teremos que aumentar sua \'e1rea. \par
+\par
+Nota: Por padr\'e3o os containers sempre tem o tamanho do seus filhos. Ent\'e3o por esse motivo o Card est\'e1 t\'e3o pequeno, pois ele possui o tamanho do texto que est\'e1 dentro dele. \par
+\par
+7- Como n\'e3o faz sentido esticar o texto para aumentar o tamanho do Card. Vamos inserir esse texto dentro de um container. \par
+\par
+\cf3 children: <Widget>[\par
+    \cf7 Container\cf8 (\cf3 child: \cf2 Card\cf3 (child: \cf2 Text\cf3 (\cf5 'Gr\'e1fico\rquote\cf3 ))),\par
+\cf1\par
+\cf0\par
+8- Altere as propriedades\tab do container de with e cor \par
+\par
+\cf3 body: \cf2 Column\cf3 (\par
+  children: <Widget>[\par
+    \cf9 Container\cf3 (\par
+      color: Colors.\cf6\i\f1 blue\cf10\i0\f0 ,\par
+      \cf3 width: double.\cf6\i\f1 infinity\cf10\i0\f0 ,\cf1\par
+      \cf3 child: \cf2 Card\cf3 (child: \cf2 Text\cf3 (\cf5 'Cadastro'\cf3 ))\cf1 ,\par
+   \cf10  \cf3 )\cf10 ,\cf1\par
+\cf0\par
+\par
+9- Salve e veja a aplica\'e7\'e3o e teste. Veja que o container est\'e1 azul, do mas o cart\'e3o com o texto ficou com o fundo branco. Mova a propriedade Colors do container para o Card. \par
+\par
+10- rode a aplica\'e7\'e3o e veja que agora est\'e1 tudo com fundo azul. \par
+\par
+11- Altere as propriedades de alinhamento do widget column \par
+\par
+\cf3 body: \cf2 Column\cf3 (\par
+  mainAxisAlignment:MainAxisAlignment.\cf6 spaceAround\cf1 ,\par
+  \cf3 crossAxisAlignment: CrossAxisAlignment.\cf6 stretch\cf1 ,\par
+\cf0\par
+Fa\'e7a testes com as op\'e7\'f5es de cada propriedade \cf3 mainAxisAlignment e crossAxisAlignment\cf0\par
+\par
+O main\'a1Axis com widget Column controla o alinhamento vertical e o crossAxis o horizontal \par
+\par
+12- continuando a ideia de desenvolver a aplica\'e7\'e3o de controle de gastos, vamos precisar de inserir tamb\'e9m um componente de lista, para exibir as transa\'e7\'f5es. \'cb claro que nesse momento ela ser\'e1 fict\'edcia, mas mesmo assim ir\'e1 nos ajudar nesse momento inicial de configura\'e7\'f5es do aplicativo. \par
+\par
+13- Para armazenar os dados da transa\'e7\'e3o iremos utilizar uma classe. Crie um novo arquivo com o nome transacao.dart na pasta lib. \par
+\par
+14- Crie a classe Transacao dentro do arquivo \par
+\par
+\cf1 class \cf3 Transacao\{\par
+  final String \cf6 id\cf1 ; \par
+  \cf3 final\cf1  \cf3 String \cf6 title\cf1 ;\par
+  \cf3 final\cf1  \cf3 double \cf6 amount\cf1 ; \par
+  \cf3 final\cf1  \cf3 DateTime \cf6 date\cf1 ;\par
+\cf3   Transacao(\{\cf1 this\cf3 .\cf6 id\cf1 , this\cf3 .\cf6 title\cf1 , this\cf3 .\cf6 amount\cf1 , this\cf3 .\cf6 date\cf3\}) \{\par
+\par
+\}\par
+\cf1\par
+\cf3\}\par
+\cf0\par
+15- Volte ao main e importe a classe para o pronto \cf10 import \cf5 './transacao.dart'\cf10 ;\par
+\cf0\par
+\par
+16- Crie o arquivo TransacoesUsuario.dart. Nesse arquivo iremos criar uma lista de transa\'e7\'f5es\par
+\par
+\cf1 class \cf3 MyHomePage \cf1 extends \cf3 StatelessWidget \{\par
+  \cf1 final \cf3 List<Transacao> \cf6 transacoes \cf3 = []\cf1 ;\par
+\cf0\par
+17- Agora preencha a listra com alguns gastos \par
+\cf1 final \cf3 List<Transacao> \cf6 transacoes \cf3 = [\par
+  \cf2 Transacao\cf3 (id: \cf5 'A1'\cf1 , \cf3 title: \cf5 "Caf\'e9"\cf1 , \cf3 amount: \cf11 2.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\cf1 ,\par
+  \cf2 Transacao\cf3 (id: \cf5 'A2'\cf1 , \cf3 title: \cf5\ldblquote p\'e3o de Queijo\rdblquote\cf1 , \cf3 amount: \cf11 3.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\par
+]\cf1 ;\par
+\cf0\par
+18- Importe esse pacote para que ele n\'e3o apresente um erro sint\'e1tico dizendo que precisamos importar o pacote. \par
+\par
+\cf12 import \cf5 'package:flutter/foundation.dart'\cf12 ;\cf1\par
+\cf0\par
+18- Para evitar que uma transa\'e7\'e3o seja cadastrada com alguma propriedade vazia, retorne ao arquivo transacao.dart e coloque todos os par\'e2metros do construtor  como requeridas \par
+\par
+\par
+\cf3 Transacao(\{\par
+  @required \cf1 this\cf3 .\cf6 id\cf1 ,\par
+ \cf3 @required \cf1 this\cf3 .\cf6 title\cf1 ,\par
+ \cf3 @required \cf1 this\cf3 .\cf6 amount\cf1 ,\par
+ \cf3 @required \cf1 this\cf3 .\cf6 date\cf3\})\par
+\cf0\par
+\par
+\par
+20- Volte ao arquivo de TransacaoUsuario. Agora que temos a lista vamos apresentar ou vincular ela a um widget de lista \par
+\par
+Como a lista ser\'e1 um conjunto de cards iremos inserir a mesma dentro de um Colum e vamos mapear os valores da nossa lista para um conjunto de cards \par
+\par
+\cf2 Column\cf3 (\par
+  children: \cf6 transacoes\cf3 .map((trans) \{\par
+    \cf1 return \cf2 Card\cf3 (\par
+      child: \cf2 Text\cf3 (trans.\cf6 title\cf3 )\cf1 ,\par
+    \cf3 )\cf1 ;\par
+  \cf3\}).toList()\cf1 ,\par
+\cf3 )\cf1 ,\par
+\cf0\par
+21- Para incluirmos as outras propriedades e uma formata\'e7\'e3o mais adequada, vamos alterar o card para \par
+\par
+\cf1 return Column(\par
+      children: transacoes.map((trans) \{\par
+        return \highlight13 Card(\par
+            child: Row(\par
+          children: [\par
+            Container(child: Text(trans.amount.toString())),\par
+            Column(\par
+              children: [Text(trans.title), Text(trans.date.toString())],\par
+            )\par
+          ],\par
+        )\highlight0 );\par
+      \}).toList(),\par
+    );\cf0  \par
+22 - Volte ao arquivo main.dart e inclua o comando \b TransacaoUsuario() \b0 no lugar do:\par
+\par
+return Scaffold(\par
+        appBar: AppBar(\par
+          title: Text('T\'edtulo'),\par
+        ),\par
+        body: Column(\par
+          mainAxisAlignment: MainAxisAlignment.spaceAround,\par
+          crossAxisAlignment: CrossAxisAlignment.stretch,\par
+          children: <Widget>[\par
+            Container(\par
+                color: Colors.blue,\par
+                width: double.infinity,\par
+                child: Card(\par
+                  child: Text('Cadastro'),\par
+                )),\highlight13\par
+            Card(\par
+              child: Text('Lista de gastos'),\par
+            )\par
+\highlight0           ],\par
+        ));\b\par
+\b0\par
+\par
+Nossa aplica\'e7\'e3o funciona bem. Exibe os dados cadastrados e lista, mas est\'e1 muito feia. \par
+\par
+Para isso precisamos aplicar estilos aos widgets \par
+\par
+-  Vamos entendendo esses conceitos melhor aplicando. Ent\'e3o vamos corrigir aquele problemas das informa\'e7\'f5es estarem emboladas ali entre o pre\'e7o e as outras informa\'e7\'f5es. \par
+\par
+- Para isso usaremos a propriedade de margem do Container isso ir\'e1 nos permitir dar um espa\'e7o entre o texto exibido e a borda do container. \par
+\par
+23 - Volte ao arquivo Transacaousuario.dart\par
+\par
+Widget build(BuildContext context) \{\par
+    return Column(\par
+      children: transacoes.map((trans) \{\par
+        return Card(\par
+            child: Row(\par
+          children: [\highlight13\par
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf2\highlight0\par
+\tab\highlight13\tab Container\cf3 (\par
+ \tab\tab  margin:\cf2 EdgeInsets\cf3 .\cf2 symmetric\cf3 (vertical:\cf11 10\cf1 ,\cf3 horizontal: \cf11 15\cf3 )\cf1 ,\par
+  \tab\tab\cf3 child: \cf2 Text\cf3 (trans.\cf6 amount\cf3 .toString())\cf1 ,\par
+\cf3\tab\tab )\cf1 ,\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\cf0\highlight0             Column(\par
+              children: [Text(trans.title), Text(trans.date.toString())],\par
+            )\par
+          ],\par
+        ));\par
+      \}).toList(),\par
+    );\par
+  \}\par
+\par
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf1\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\cf0\par
+A propriedade Margin cria uma distancia entre a borda externa do container para os outros elementos. Nesse caso da linha onde o container est\'e1 inserido. \par
+\par
+A margin \'e9 do tipo EdgeInsets. Ent\'e3o todas as vezes que deseja criar uma margin deve passar para ela um objeto desse tipo. \par
+\par
+- Mas para trabalhar com a apar\'eancia devemos trabalhar com o Boxdecoration que \'e9 o componente que ir\'e1 nos fornecer diversas propriedades para configurar a apar\'eancia dos widgets. \par
+\par
+\cf2 Container\cf3 (\par
+  margin:\cf2 EdgeInsets\cf3 .\cf2 symmetric\cf3 (vertical:\cf11 10\cf1 ,\cf3 horizontal: \cf11 15\cf3 )\cf1 ,\highlight13\par
+  \cf3 decoration: \cf9 BoxDecoration\cf3 (border:\cf9 Border\cf3 .\cf9 all\cf3 (color: Colors.\cf6\i\f1 black\cf10\i0\f0 ,\cf3 width: \cf14 2\cf3 ))\cf10 ,\par
+  \cf3 padding:\cf9 EdgeInsets\cf3 .\cf9 all\cf3 (\cf14 10\cf3 ) \cf10 ,\cf1\par
+\highlight0   \cf3 child: \cf2 Text\cf3 (trans.\cf6 amount\cf3 .toString())\cf1 ,\par
+\cf3 )\cf1 ,\par
+\cf0\par
+\par
+Ent\'e3o agora, vamos formatar o texto. Para facilitar e ter acesso a v\'e1rias propriedades de uma s\'f3 vez. Vamos usar o objeto TextStyle. \par
+\par
+\cf3 child: \cf2 Text\cf3 (trans.\cf6 amount\cf3 .toString()\cf1 ,\par
+\cf3\highlight13 style:\cf9 TextStyle\cf3 (fontWeight: FontWeight.\cf6\i\f1 bold\cf10\i0\f0 ,\cf3 fontSize: \cf14 20\cf10 , \cf3 color: Colors.\cf6\i\f1 purple\cf3\i0\f0 ))\cf10 ,\cf1\par
+\highlight0\par
+\cf0\par
+\par
+Para ficar melhor agora vamos alterar tamb\'e9m a cor da borda do box \par
+\par
+\cf3 decoration: \cf2 BoxDecoration\cf3 (border:\cf2 Border\cf3 .\cf2 all\cf3 (color: \highlight13 Colors.\cf6\i\f1 purple  \cf1\highlight0\i0\f0 ,\cf3 width: \cf11 2\cf3 ))\cf1 ,\par
+\cf0\par
+\par
+Vamos aplicar agora formata\'e7\'e3o semelhante a linha que cont\'e9m as outras informa\'e7\'f5es. \par
+\par
+Para corrigir o texto do t\'edtulo que est\'e1 centralizado, vamos alinhar a coluna para ficar alinhada a esquerda \par
+\par
+\par
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf2 Column\cf3 (\highlight13\par
+    crossAxisAlignment:CrossAxisAlignment.\cf6 start\par
+\highlight0     \cf1 ,\cf3 children: <Widget>[\par
+  \cf2 Text\cf3 (trans.\cf6 title\cf1 , \cf3\highlight13 style: \cf2 TextStyle\cf3 (fontSize: \cf11 16\cf1 ,\cf3 fontWeight: FontWeight.\cf6\i\f1 bold\cf3\i0\f0 )\cf1 ,\cf3\highlight0 )\cf1 ,\par
+  \cf2 Text\cf3 (\par
+    trans.\cf6 date\cf3 .toString()\cf1 ,  \cf3\highlight13 style: \cf2 TextStyle\cf3 (color:Colors.\cf6\i\f1 grey\cf1\i0\f0 , \cf3 fontSize: \cf11 16\cf1 ,\cf3 fontWeight: FontWeight.\cf6\i\f1 bold\cf3\i0\f0 )\cf1 ,\highlight0\par
+  \cf3 )\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\cf0\par
+\par
+Vamos entender aqui algumas diferen\'e7as entre Container, row, column \par
+\par
+A primeira e muito importante \'e9 que o Container s\'f3 pode ter um filho. J\'e1 as linhas e colunas podem ter v\'e1rios. Por outro lado o container oferece op\'e7\'f5es mais avan\'e7adas de alinhamento e formas de decorar mais flex\'edveis que as linhas e colunas. Assim n\'e3o \'e9 poss\'edvel adicionar bordas e outras configura\'e7\'f5es decorativas as colunas e linhas. O container tamb\'e9m oferece op\'e7\'e3o de dimensionar com tamanhos fixos, j\'e1 as linhas e colunas sempre ocupam o espa\'e7o de seus filhos. \par
+\par
+\par
+Uma informa\'e7\'e3o muito interessante sobre as concatena\'e7\'f5es \'e9 que sempre que utiliza o operador + para faz\'ea-las , ele gera uma terceira vari\'e1vel para unir o conte\'fados das duas. O que acaba gerando um consumo de mem\'f3ria maior nos aplicativos. No entanto isso deve ser evitado quando se realizara essa opera\'e7\'f5es de forma volumosa e repetidamente. No caso aqui se quisermos colocar o R$ a frente dos pre\'e7\'f5es cadastrados nas opera\'e7\'f5es financeiras apresentadas no aplicativo. O melhor \'e9 utilizar o $\{ \}. Isso evitar\'e1 que uma nova vari\'e1vel seja criada a cada concatena\'e7\'e3o de string a ser realizada. \par
+\par
+\par
+Altere a formata\'e7\'e3o da exibi\'e7\'e3o da amount para \par
+\par
+\highlight13 'R\\$ $\{trans.amount.toStringAsFixed(2)\}'\par
+\highlight0\par
+Trabalhar com formata\'e7\'e3o de data principalmente quando se tem v\'e1rios idiomas, pode ser algo complicado. Para evitar esse problema, que \'e9 obvio poder\'edamos escrever nosso c\'f3digo, mas visando ganho de tempo, nos iremos usar uma biblioteca j\'e1 pronta para isso. \par
+\par
+- V\'e1 ao google e procure dart dateformat intl essa biblioteca nos permitir\'e1 facilmente formatar as datas a serem apresentadas de forma mais simples e ainda iremos aprender como instalar nos bibliotecas no nosso aplicativo. O que \'e9 certamente, muito \'fatil e usado. \par
+\par
+- Se preferir pode acessar diretamente o site {{\field{\*\fldinst{HYPERLINK https://pub.dev/packages/intl }}{\fldrslt{https://pub.dev/packages/intl\ul0\cf0}}}}\f0\fs24  \par
+\par
+- Dentro do pr\'f3prio site ele lhe ensina como instalar a biblioteca. Para isso basta clicar no link Install \par
+\par
+
+\pard\sa320\cf16\fs32 Adicione ao arquivo pubspec.yaml do seu pacote:\par
+
+\pard\sl320\slmult0\cf17\f2\fs27 dependencies:\par
+  intl: \cf18 ^0.16.1\cf17\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\cf0\kerning1\f0\fs24\par
+\par
+\par
+\cf1 dependencies\cf3 :\par
+  \cf1 flutter_test\cf3 :\par
+    \cf1 sdk\cf3 : flutter\par
+  \cf10 intl\cf3 : ^0.16.1\par
+\cf0\par
+\par
+- Salve o arquivo e veja se n\'e3o deu erro. \'c9 importante que a inclus\'e3o da biblioteca seja feita ap\'f3s o sdk:flutter, pois se ela gerar algum tipo de erro, n\'e3o ir\'e1 importar o SDK do flutter e aparecer\'e3o milh\'f5es de erros no seu c\'f3digo. \par
+\par
+\'c9 importtante que o o int esteja no mesmo alinhamento do flutter_test: sen\'e3o ele ser\'e1 considerado algo presente ao SDK e isso ir\'e1 gerar erro. \par
+\par
+- Volte a p\'e1gina do site para aprendermos a utilizar a biblioteca. Na lateral direita procurei pelo link Documenta\'e7\'e3o da API. \par
+\par
+\par
+- Volte ao arquivo main.dart. \par
+\par
+- Inclua a importa\'e7\'e3o da biblioteca no c\'f3digo. \cf10 import \cf5 'package:intl/intl.dart'\cf10 ;\cf1\par
+\cf0\par
+- V\'e1 a linha de c\'f3digo que est\'e1 imprimindo a data e configure a formata\'e7\'e3o usando a nova fun\'e7\'e3o. \par
+\par
+\cf2 Text\cf3 (\par
+ \cf9\highlight13 DateFormat\cf3 ().format(trans.\cf6 date\cf3 )\cf1\highlight0 ,  \cf3 style: \cf2 TextStyle\cf3 (color:Colors.\cf6\i\f1 grey\cf1\i0\f0 , \cf3 fontSize: \cf11 16\cf1 ,\cf3 fontWeight: FontWeight.\cf6\i\f1 bold\cf3\i0\f0 )\cf1 ,\par
+\cf3 )\par
+\cf0\par
+\par
+Entre os par\'eanteses do DateFormat voc\'ea pode passar dois par\'e2metros um que seria a formata\'e7\'e3o de apresenta\'e7\'e3o e o outro o pa\'eds com o padr\'e3o de formata\'e7\'e3o. \par
+\par
+DateFormat\highlight13 (\lquote yyyy-MM-dd HH:mm\rquote  \highlight0 ).formate(trans.date), \par
+\par
+\par
+\kerning0 Dando continuidade a nossa aplica\'e7\'e3o nos iremos agora inserir o bot\'e3o de adicionar transa\'e7\'f5es. \par
+\par
+Abra o arquivo main.dart\par
+\par
+Antes de inserir o bot\'e3o iremos abrir espa\'e7o na tela do aplicativo. Ent\'e3o vamos comentar a linha do cont\'eainer principal da aplica\'e7\'e3o que faz o alinhamento vertical da aplica\'e7\'e3o destinando o mesmo espa\'e7o de tela aos 2 container centrais\par
+\par
+\cf3 body: \cf2 Column\cf3 (\par
+\highlight13     \cf19 //mainAxisAlignment: MainAxisAlignment.spaceAround,\par
+\highlight0     \cf3 crossAxisAlignment: CrossAxisAlignment.\cf6 stretch\cf1 ,\par
+    \cf3 children: <Widget>[\par
+\cf0\par
+\par
+Vamos agora inserir os campos de entrada de texto para coletar as informa\'e7\'f5es \par
+\par
+\cf2  body: Column(\par
+          //mainAxisAlignment: MainAxisAlignment.spaceAround,\par
+          crossAxisAlignment: CrossAxisAlignment.stretch,\par
+          children: <Widget>[\par
+            Container(\par
+                color: Colors.blue,\par
+                width: double.infinity,\par
+                child: Card(\par
+                  child: Text('Cadastro'),\par
+                )),\highlight13\par
+            Card(\par
+              elevation: 5,\par
+              child: Column(\par
+                children: <Widget>[TextField(), TextField()],\par
+              ),\par
+            ),\par
+\highlight0             TransacaoUsuario()\cf0\par
+\par
+Para melhorar o espa\'e7amento da caixa em rela\'e7\'e3o as bordas da aplica\'e7\'e3o, vamos inserir um container dentro do card. Esse container deve englobar tudo que est\'e1 no card at\'e9 o momento. \par
+\par
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf2 Card\cf3 (\par
+  elevation: \cf11 5\cf1 ,\highlight13\par
+  \cf3 child: \cf9 Container\cf3 (\par
+    padding: \cf9 EdgeInsets\cf3 .\cf9 all\cf3 (\cf14 10\cf3 )\cf10 ,\cf1\par
+\highlight0   \cf3 child: \cf2 Column\cf3 (\par
+    children: <Widget>[\cf2 TextField\cf3 ()\cf1 , \cf2 TextField\cf3 ()]\cf1 ,\par
+  \cf3 )\cf1 ,\par
+\highlight13  \cf10  \cf3 )\cf10 ,\cf1\highlight0\par
+\cf3 )\cf1 ,\par
+\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\cf0\par
+Porque temos que inserir o container? Porque o column n\'e3o possui essas formata\'e7\'f5es de padding para adicionar esse espa\'e7amento. \par
+\par
+Agora iremos cuidar dos campos de entrada de texto. Vamos inserir os r\'f3tulos nos campos de texto e um bot\'e3o de inserir as transa\'e7\'f5es  \par
+\par
+\cf3 child: \cf2 Column\cf3 (\par
+  \highlight13 crossAxisAlignment: CrossAxisAlignment.\cf6 end\cf10 ,\cf1\par
+\highlight0   \cf3 children: <Widget>[\par
+    \cf2 TextField\cf3 (\highlight13\par
+      decoration: \cf9 InputDecoration\cf3 (labelText: \cf5 'Title: '\cf3 )\cf10 ,\cf1\par
+\highlight0     \cf3 )\cf1 ,\par
+    \cf2 TextField\cf3 (\par
+      \highlight13 decoration: \cf9 InputDecoration\cf3 (labelText: \cf5 'Amount: '\cf3 )\cf10 ,\par
+      keyboardType: TextInputType.number,\cf1\par
+\highlight0     \cf3 )\cf1 ,\highlight13\par
+   ElevatedButton(onPressed: () \{\}, child: Text("Incluir"))\cf3\par
+\highlight0   ]\cf1 ,\par
+\cf3 )\cf1 ,\par
+\cf0\par
+\par
+A linha do crossAxis \'e9 para alinhar o bot\'e3o a direita da coluna \par
+\par
+\par
+Agora vamos capturar as entradas de dados inseridas pelos us\'e1rios no campo de texto. \par
+\par
+\b Antes do @override \par
+\b0\par
+\highlight13 final descritivoController = TextEditingController(); \par
+final gastoController = TextEditingController(); \par
+\highlight0\par
+- E agora inclua a propriedade controlar no campo de texto \par
+\par
+\cf2 TextField\cf3 (\par
+  decoration: \cf2 InputDecoration\cf3 (labelText: \cf5 'Title: '\cf3 )\cf1 ,\par
+\highlight13   \cf3 controller: \cf6 descritivoController\cf10 ,\par
+\cf19\highlight0\par
+\cf3 )\cf1 ,\par
+\cf2 TextField\cf3 (\par
+  decoration: \cf2 InputDecoration\cf3 (labelText: \cf5 'Amount: '\cf3 )\cf1 ,\par
+\highlight13   \cf3 controller: \cf6 gastoController\cf10 ,\par
+\cf3\highlight0 )\cf10 ,\cf1\par
+\cf2 FlatButton\cf3 (\par
+  child: \cf2 Text\cf3 (\cf5 'Add transaction'\cf3 )\cf1 ,\par
+  \cf3 textColor:Colors.\cf6\i\f1 purple\cf1\i0\f0 ,\par
+  \cf3 onPressed: ()\{\par
+     \cf19 // print(descritivo);\par
+    //  print(gasto);\par
+\highlight13       \cf3 print(\cf6 descritivoController\cf3 .\cf6 text\cf3 )\cf10 ;\par
+      \cf3 print(\cf6 gastoController\cf3 .\cf6 text\cf3 )\cf10 ;\par
+\cf1\highlight0   \cf3\}\cf1 ,\par
+\cf0\par
+\par
+- Como j\'e1 dito em aulas anteriores o ideal \'e9 n\'e3o criar widgets muito grandes ent\'e3o aqui vamos corrigir isso, pois o nosso est\'e1 fincando com uma estrutura enorme e se colocarmos todos em um statefulWidget nos iremos pesar o processamento de atualiza\'e7\'e3o desnecessariamente. \par
+\par
+- Crie um novo arquivo .dart na pasta lib d\'ea a ele o nome transacoesWidget. \par
+\par
+- Agora vamos para um atalho que nos auxiliar\'e1 bastante. Digite st na lista escolha stful\par
+\par
+- Ele est\'e1 apresentando v\'e1rios erros porque a classe est\'e1 sem nome. Vamos inserir o nome TransacoesWidget para nossa classe\par
+\par
+\cf1 class \cf3 TransacoesWidget \cf1 extends \cf3 StatefulWidget \{\par
+  \cf4 @override\par
+  \cf3 _TransacoesWidgetState \cf2 createState\cf3 () => \cf9 _TransacoesWidgetState\cf3 ()\cf1 ;\par
+\cf3\}\par
+\par
+\cf1 class \cf3 _TransacoesWidgetState \cf1 extends \cf3 State<TransacoesWidget> \{\par
+  \cf4 @override\par
+  \cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+    \cf1 return \cf2 Container\cf3 ()\cf1 ;\par
+  \cf3\}\par
+\}\par
+\cf0  \par
+\par
+- Ent\'e3o s\'f3 falta importar o pacote do flutter e est\'e1 tudo ok. \par
+\par
+\cf10 import \cf5 'package:flutter/material.dart'\cf10 ;\cf1\par
+\cf0\par
+- Bom agora \'e9 hora de transferir as estruturas \par
+\par
+- V\'e1 ao arquivo TransacaoUsuario e recorte as estruturas abaixo inserindo no transacoesWidget\par
+\par
+\cf10 import \cf5 'package:intl/intl.dart'\cf10 ;\par
+import \cf5 './transacao.dart'\cf10 ;\par
+\cf0\par
+\par
+\cf10 class \cf3 _TransacoesWidgetState \cf10 extends \cf3 State<TransacoesWidget> \{\par
+  \cf10 final \cf3 List<Transacao> \cf6 transacoes \cf3 = [\par
+    \cf9 Transacao\cf3 (id: \cf5 'A1'\cf10 , \cf3 title: \cf5 "Caf\'e9"\cf10 , \cf3 amount: \cf14 3.00\cf10 , \cf3 date: \cf9 DateTime\cf3 .\cf9 now\cf3 ())\cf10 ,\par
+    \cf9 Transacao\cf3 (\par
+        id: \cf5 'A2'\cf10 , \cf3 title: \cf5 "Hamburguer"\cf10 , \cf3 amount: \cf14 18.00\cf10 , \cf3 date: \cf9 DateTime\cf3 .\cf9 now\cf3 ())\par
+  ]\cf10 ;\par
+  \cf20 @override\par
+\cf0\par
+\par
+\par
+Aqui estamos copiando a estrutura de armazenamento e agora vamos trazer a estrutura de widgets \par
+\par
+V\'e1 ao main e recorte toda a estrutura do column que cont\'e9m a apresenta\'e7\'e3o dos dados din\'e2micos como exibido abaixo \par
+\par
+\cf2 Column\cf3 (\par
+  children: transacoes.map((trans) \{\par
+    \cf1 return \cf2 Card\cf3 (\par
+        child: \cf2 Row\cf3 (children: <Widget>[\par
+      \cf2 Container\cf3 (\par
+        margin:\par
+            \cf2 EdgeInsets\cf3 .\cf2 symmetric\cf3 (vertical: \cf11 10\cf1 , \cf3 horizontal: \cf11 15\cf3 )\cf1 ,\par
+        \cf3 decoration: \cf2 BoxDecoration\cf3 (\par
+            border: \cf2 Border\cf3 .\cf2 all\cf3 (color: Colors.\cf6\i\f1 purple\cf1\i0\f0 , \cf3 width: \cf11 2\cf3 ))\cf1 ,\par
+        \cf3 padding: \cf2 EdgeInsets\cf3 .\cf2 all\cf3 (\cf11 10\cf3 )\cf1 ,\par
+        \cf3 child: \cf2 Text\cf3 (\cf5 'R\cf1\\$ \cf3 $\{trans.amount.toString()\}\cf5 '\cf1 ,\par
+            \cf3 style: \cf2 TextStyle\cf3 (\par
+                fontWeight: FontWeight.\cf6\i\f1 bold\cf1\i0\f0 ,\par
+                \cf3 fontSize: \cf11 20\cf1 ,\par
+                \cf3 color: Colors.\cf6\i\f1 purple\cf3\i0\f0 ))\cf1 ,\par
+      \cf3 )\cf1 ,\par
+      \cf2 Column\cf3 (\par
+          crossAxisAlignment: CrossAxisAlignment.\cf6 start\cf1 ,\par
+          \cf3 children: <Widget>[\par
+            \cf2 Text\cf3 (\par
+              trans.title\cf1 ,\par
+              \cf3 style: \cf2 TextStyle\cf3 (\par
+                  fontSize: \cf11 16\cf1 , \cf3 fontWeight: FontWeight.\cf6\i\f1 bold\cf3\i0\f0 )\cf1 ,\par
+            \cf3 )\cf1 ,\par
+            \cf2 Text\cf3 (\par
+              DateFormat(\cf5 'dd-MM-yyyy hh:mm'\cf3 ).format(trans.date)\cf1 ,\par
+              \cf3 style: \cf2 TextStyle\cf3 (\par
+                  color: Colors.\cf6\i\f1 grey\cf1\i0\f0 ,\par
+                  \cf3 fontSize: \cf11 16\cf1 ,\par
+                  \cf3 fontWeight: FontWeight.\cf6\i\f1 bold\cf3\i0\f0 )\cf1 ,\par
+            \cf3 )\par
+          ])\par
+    ]))\cf1 ;\par
+  \cf3\}).toList()\cf1 ,\par
+\cf3 )\par
+\cf0\par
+\par
+Cole no lugar do container a frente do retun \par
+\par
+\par
+\cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+    \cf1 return \cf9 Column\cf3 (\par
+      children: \cf6 transacoes\cf3 .map((trans) \{\par
+        \cf10 return \cf9 Card\cf3 (\par
+            child: \cf9 Row\cf3 (children: <Widget>[\par
+              \cf9 Container\cf3 (\par
+                margin:\par
+                \cf9 EdgeInsets\cf3 .\cf9 symmetric\cf3 (vertical: \cf14 10\cf10 , \cf3 horizontal: \cf14 15\cf3 )\cf10 ,\par
+                \cf3 decoration: \cf9 BoxDecoration\cf3 (\par
+                    border: \cf9 Border\cf3 .\cf9 all\cf3 (color: Colors.\cf6\i\f1 purple\cf10\i0\f0 , \cf3 width: \cf14 2\cf3 ))\cf10 ,\par
+                \cf3 padding: \cf9 EdgeInsets\cf3 .\cf9 all\cf3 (\cf14 10\cf3 )\cf10 ,\par
+                \cf3 child: \cf9 Text\cf3 (\cf5 'R\cf10\\$ \cf3 $\{trans.\cf6 amount\cf3 .toString()\}\cf5 '\cf10 ,\par
+                    \cf3 style: \cf9 TextStyle\cf3 (\par
+                        fontWeight: FontWeight.\cf6\i\f1 bold\cf10\i0\f0 ,\par
+                        \cf3 fontSize: \cf14 20\cf10 ,\par
+                        \cf3 color: Colors.\cf6\i\f1 purple\cf3\i0\f0 ))\cf10 ,\par
+              \cf3 )\cf10 ,\par
+              \cf9 Column\cf3 (\par
+                  crossAxisAlignment: CrossAxisAlignment.\cf6 start\cf10 ,\par
+                  \cf3 children: <Widget>[\par
+                    \cf9 Text\cf3 (\par
+                      trans.\cf6 title\cf10 ,\par
+                      \cf3 style: \cf9 TextStyle\cf3 (\par
+                          fontSize: \cf14 16\cf10 , \cf3 fontWeight: FontWeight.\cf6\i\f1 bold\cf3\i0\f0 )\cf10 ,\par
+                    \cf3 )\cf10 ,\par
+                    \cf9 Text\cf3 (\par
+                      \cf9 DateFormat\cf3 (\cf5 'dd-MM-yyyy hh:mm'\cf3 ).format(trans.\cf6 date\cf3 )\cf10 ,\par
+                      \cf3 style: \cf9 TextStyle\cf3 (\par
+                          color: Colors.\cf6\i\f1 grey\cf10\i0\f0 ,\par
+                          \cf3 fontSize: \cf14 16\cf10 ,\par
+                          \cf3 fontWeight: FontWeight.\cf6\i\f1 bold\cf3\i0\f0 )\cf10 ,\par
+                    \cf3 )\par
+                  ])\par
+            ]))\cf10 ;\par
+      \cf3\}).toList()\cf10 ,\par
+    \cf3 )\cf10 ;\par
+\cf1   \cf3\}\par
+\}\par
+\cf0\par
+- Salve sua aplica\'e7\'e3o \par
+\par
+N\'e3o ir\'e1 aparecer as trasa\'e7\'f5es mais, pois nos recortamos os componentes do mais.dart, mas n\'e3o inserimos a chada do  main. \par
+\par
+Altere a chamada do construtor no main.dart\par
+\par
+return Scaffold(\par
+        appBar: AppBar(\par
+          title: Text('T\'edtulo'),\par
+        ),\par
+        body: Column(\par
+          //mainAxisAlignment: MainAxisAlignment.spaceAround,\par
+          crossAxisAlignment: CrossAxisAlignment.stretch,\par
+          children: <Widget>[\par
+            Container(\par
+                color: Colors.blue,\par
+                width: double.infinity,\par
+                child: Card(\par
+                  child: Text('Cadastro'),\par
+                )),\par
+            Card(\par
+              elevation: 5,\par
+              child: Container(\par
+                  padding: EdgeInsets.all(10),\par
+                  child: Column(\par
+                      crossAxisAlignment: CrossAxisAlignment.end,\par
+                      children: <Widget>[\par
+                        TextField(\par
+                          controller: descritivoController,\par
+                          decoration: InputDecoration(labelText: 'Title: '),\par
+                        ),\par
+                        TextField(\par
+                          controller: gastoController,\par
+                          keyboardType: TextInputType.number,\par
+                          decoration: InputDecoration(labelText: 'Amount: '),\par
+                        ),\par
+                        ElevatedButton(\par
+                            onPressed: () \{\par
+                              print(descritivoController.text);\par
+                              print(gastoController.text);\par
+                            \},\par
+                            child: Text("Incluir"))\par
+                      ])),\par
+            ),\par
+\highlight13             TransacoesWidget()\par
+\highlight0\par
+\cf21 No final do card onde recortamos o c\'f3digo. Insira a linha de comando \par
+\par
+FlatButton(\par
+          child: Text('Add transaction'),\par
+          textColor:Colors.\i\f1 purple\i0\f0 ,\par
+          onPressed: ()\{\par
+             // print(descritivo);\par
+            //  print(gasto);\par
+              print(descritivoController.text);\par
+              print(gastoController.text);\par
+          \},\par
+        )\par
+      ],\par
+    ),\par
+  ),\par
+),\par
+\par
+\par
+\cf0\par
+Salve e teste a aplica\'e7\'e3o. \par
+\par
+\par
+- Aproveitando que j\'e1 iniciamos essa organiza\'e7\'e3o vamos fazer da maneira correta e fragmentar a aplica\'e7\'e3o em v\'e1rias partes para facilitar a manuten\'e7\'e3o posteriormente. \par
+\par
+- Crie um novo arquivo .dart chamado NovasTransacoes. \par
+\par
+- Digite st e incorpore um estado stateless\par
+\par
+- d\'ea a classe o nome NovasTransacoes \par
+\par
+Recorte o card que cont\'e9m os campos de entrada de texto e insira a frente do return da fun\'e7\'e3o \par
+\par
+\cf1 import \cf5 'package:flutter/material.dart'\cf1 ;\par
+\par
+class \cf3 NovasTransacoes \cf1 extends \cf3 StatelessWidget \{\par
+  \cf1 final \cf6 descritivoController \cf3 = \cf2 TextEditingController\cf3 ()\cf1 ;\par
+  final \cf6 gastoController \cf3 = \cf2 TextEditingController\cf3 ()\cf1 ;\par
+  \cf4 @override\par
+  \cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+    \cf1 return \cf2 Card\cf3 (\par
+      elevation: \cf11 5\cf1 ,\par
+      \cf3 child: \cf2 Container\cf3 (\par
+        padding: \cf2 EdgeInsets\cf3 .\cf2 all\cf3 (\cf11 10\cf3 )\cf1 ,\par
+        \cf3 child: \cf2 Column\cf3 (\par
+          crossAxisAlignment: CrossAxisAlignment.\cf6 end\cf1 ,\par
+          \cf3 children: <Widget>[\par
+            \cf2 TextField\cf3 (\par
+              decoration: \cf2 InputDecoration\cf3 (labelText: \cf5 'Title: '\cf3 )\cf1 ,\par
+              \cf3 controller: \cf6 descritivoController\cf3 )\cf1 ,\par
+            \cf2 TextField\cf3 (\par
+              decoration: \cf2 InputDecoration\cf3 (labelText: \cf5 'Amount: '\cf3 )\cf1 ,\par
+              \cf3 controller: \cf6 gastoController\cf1 ,\cf19             \par
+\tab\tab\cf3 )\cf1 ,\cf3           \par
+\tab ]\cf1 ,\par
+        \cf3 )\cf1 ,\par
+      \cf3 )\cf1 ,\par
+    \cf3 )\cf1 ;\par
+  \cf3\}\par
+\}\par
+\cf0\par
+\par
+- Volte ao arquivo main.dart e coloque o construtor dessa nova classe sobre o construtor das TransacoesWidget\par
+\par
+\cf4 @override\par
+  \cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+    \cf1 return \cf2 Scaffold\cf3 (\par
+        appBar: \cf2 AppBar\cf3 (\par
+          title: \cf2 Text\cf3 (\cf5 'Flutter App'\cf3 )\cf1 ,\par
+        \cf3 )\cf1 ,\par
+        \cf3 body: \cf2 Column\cf3 (\par
+            \cf19 //mainAxisAlignment: MainAxisAlignment.spaceAround,\par
+            \cf3 crossAxisAlignment: CrossAxisAlignment.\cf6 stretch\cf1 ,\par
+            \cf3 children: <Widget>[\par
+              \cf2 Container\cf3 (\par
+                width: double.\cf6\i\f1 infinity\cf1\i0\f0 ,\par
+                \cf3 child: \cf2 Card\cf3 (color: Colors.\cf6\i\f1 blue\cf1\i0\f0 , \cf3 child: \cf2 Text\cf3 (\cf5 'Gr\'e1fico'\cf3 ))\cf1 ,\par
+              \cf3 )\cf1 ,\par
+\highlight13            \cf10    \cf9 NovasTransacoes\cf3 ()\cf10 ,\par
+\cf1               \cf2 TransacoesWidget\cf3 ()\par
+\highlight0             ]))\cf1 ;\par
+  \cf3\}\par
+\}\par
+\cf0\par
+\par
+Para facilitar nosso acesso as transa\'e7\'f5es e gest\'e3o dos estados de atualiza\'e7\'e3o da tela, vamos criar um arquivo separado que contenha as duas novas divis\'f5es que fizemos aqui. \par
+\par
+Crie um novo arquivo UserTransaction.dart \par
+\par
+Digite st e escolha stful \par
+\par
+Nomeie a classe como UserTransaction\par
+\par
+\cf1 class \cf3 UserTransaction \cf1 extends \cf3 StatefulWidget \{\par
+\cf0\par
+\par
+Agora vamos ajustar o conte\'fado retornado pelo arquivo\par
+\par
+\cf1 class \cf3 _UserTransactionState \cf1 extends \cf3 State<UserTransaction> \{\par
+  \cf4 @override\par
+  \cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+    \cf1 return \cf9\highlight13 Column\cf3 (children:<Widget> [\par
+      \cf9 NovasTransacoes\cf3 ()\cf10 ,\par
+      \cf9 TransacoesWidget\cf3 ()]\cf10 ,\cf3 )\cf10 ;\par
+  \cf3\}\par
+\cf0\highlight0\par
+- Salve o arquivo \par
+\par
+- Teste a aplica\'e7\'e3o \par
+\par
+\par
+Percebam que agora com essa divis\'f5es temos um problema, pois a lista de transa\'e7\'f5es est\'e1 no modulo transacoesWidget, porem ela deve ser atualizada no novasTransa\'e7oes. \par
+\par
+Vamos ajustar isso para evitar problemas de ordem de carregamento. Mostre que no c\'f3digo do Main.dat o NovasTransacoes vem primeiro que o transacoesWidget\par
+\par
+\par
+Altere o estado da classe para \cf3 StatelessWidget\par
+\cf0\par
+\cf1 class \cf3 TransacoesWidget \cf1 extends \cf3 StatelessWidget \{\par
+  \cf20 @override\par
+  \cf3 _TransacoesWidgetState \cf9 createState\cf3 () => \cf9 _TransacoesWidgetState\cf3 ()\cf10 ;\par
+\cf3\}\par
+\par
+\cf10 class \cf3 _TransacoesWidgetState \cf10 extends \cf3 State<TransacoesWidget> \{\par
+\cf0\par
+Ele ir\'e1 criar automaticamente essas linhas marcadas de fundo vermelho que podem ser apagadas, pois j\'e1 existem na nossa classe \par
+\par
+\cf1 class \cf3 TransacoesWidget \cf1 extends \cf3 StatelessWidget \{\par
+ \par
+  \cf1 final \cf3 List<Transacao> \cf6 transacoes \cf3 = [\par
+    \cf2 Transacao\cf3 (id: \cf5 'A1'\cf1 , \cf3 title: \cf5 "Caf\'e9"\cf1 , \cf3 amount: \cf11 3.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\cf1 ,\par
+    \cf2 Transacao\cf3 (\par
+        id: \cf5 'A2'\cf1 , \cf3 title: \cf5 "Hamburguer"\cf1 , \cf3 amount: \cf11 18.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\par
+  ]\cf1 ;\par
+\cf3\par
+\cf0\par
+\par
+Agora para evitar mos a ordem de carregamento inversa entre os m\'f3dulos. O modulo de lista vem depois do m\'f3dulo de inclus\'e3o, por\'e9m a lista era criada no m\'f3dulo de lista. O que nos gera um problema, pois precisamos incluir novas transa\'e7\'f5es nela no modulo de novasTransacoes so que ela ainda n\'e3o existia. \par
+\par
+\par
+Recorte a declara\'e7\'e3o e preenchimento da lista do m\'f3dulo de transacoesWidget e vamos levar para o UserTransactiuon que engloba os dois m\'f3dulos, assim n\'e3o teremos o problema da ordem. \par
+\par
+\cf1 final \cf3 List<Transacao> \cf6 transacoes \cf3 = [\par
+  \cf2 Transacao\cf3 (id: \cf5 'A1'\cf1 , \cf3 title: \cf5 "Caf\'e9"\cf1 , \cf3 amount: \cf11 3.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\cf1 ,\par
+  \cf2 Transacao\cf3 (\par
+      id: \cf5 'A2'\cf1 , \cf3 title: \cf5 "Hamburguer"\cf1 , \cf3 amount: \cf11 18.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\par
+]\cf1 ;\par
+\cf0\par
+\par
+\cf1 class \cf3 _UserTransactionState \cf1 extends \cf3 State<UserTransaction> \{\par
+ \par
+  \cf10 final \cf3 List<Transacao> \cf6 transacoes \cf3 = [\par
+    \cf9 Transacao\cf3 (id: \cf5 'A1'\cf10 , \cf3 title: \cf5 "Caf\'e9"\cf10 , \cf3 amount: \cf14 3.00\cf10 , \cf3 date: \cf9 DateTime\cf3 .\cf9 now\cf3 ())\cf10 ,\par
+    \cf9 Transacao\cf3 (\par
+        id: \cf5 'A2'\cf10 , \cf3 title: \cf5 "Hamburguer"\cf10 , \cf3 amount: \cf14 18.00\cf10 , \cf3 date: \cf9 DateTime\cf3 .\cf9 now\cf3 ())\par
+  ]\cf10 ;\par
+  \cf1\par
+  \cf4 @override\par
+\cf0\par
+\par
+- Agora fa\'e7a a importa\'e7\'e3o do transacao.dart \par
+\par
+\cf10 import \cf5 'package:despesas/transacao.dart'\cf10 ;\cf1\par
+\cf0\par
+\par
+- Volte aos outros arquivos e mantenha somente os impores necess\'e1rios \par
+\par
+Mesmo que tenhamos corrigido esse problema a IDE n\'e3o conseguir\'e1 identificar nos arquivos separadamente as List criadas em outros arquivos. Ent\'e3o vamos usar o recurso de apontadores para resolver o problema, \par
+\par
+- V\'e1 ao arquivo transacoesWidget \par
+\par
+Vamos declarar aqui uma lista auxiliar que ir\'e1 receber por refer\'eancia a lista de transa\'e7\'f5es. \par
+\par
+\cf3\par
+\cf1 class \cf3 TransacoesWidget \cf1 extends \cf3 StatelessWidget \{\par
+  \cf10 final \cf3 List<Transacao> \cf6 transacoesAux\cf10 ;\par
+  \par
+  \cf3 TransacoesWidget(\cf10 this\cf3 .\cf6 transacoesAux\cf3 )\cf10 ;\cf1\par
+  \cf4 @override\par
+\cf0\par
+Troque a refer\'eancia do transa\'e7\'f5es o mapeamento \par
+\par
+\cf1 return \cf2 Column\cf3 (\par
+  children: \cf6 transacoesAux\cf3 .map((trans) \{\par
+    \cf1 return \cf2 Card\cf3 (\par
+\cf0\par
+- V\'e1 ao arquivo de UserTransaction e passa como par\'e2metro o \cf6 transacoes\par
+\cf0\par
+\cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+  \cf1 return \cf2 Column\cf3 (children:<Widget> [\par
+    \cf2 NovasTransacoes\cf3 ()\cf1 ,\par
+   \cf10  \cf9 TransacoesWidget\cf3 (\cf6 transacoes\cf3 )]\cf10 ,\cf3 )\cf10 ;\cf1\par
+\cf3\}\par
+\cf0\par
+\par
+- Bom com isso voc\'ea conectar as duas estruturas que s\'e3o passadas por refer\'eancia entre os arquivos. \par
+\par
+- Ainda do arquivo de TransacaoUsuario, vamos criar um m\'e9todo para receber as transa\'e7\'f5es e ser chamado no arquivo de novastransacoes\par
+\par
+\cf1 final \cf3 List<Transacao> \cf6 transacoes \cf3 = [\par
+  \cf2 Transacao\cf3 (id: \cf5 'A1'\cf1 , \cf3 title: \cf5 "Caf\'e9"\cf1 , \cf3 amount: \cf11 3.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\cf1 ,\par
+  \cf2 Transacao\cf3 (\par
+      id: \cf5 'A2'\cf1 , \cf3 title: \cf5 "Hamburguer"\cf1 , \cf3 amount: \cf11 18.00\cf1 , \cf3 date: \cf2 DateTime\cf3 .\cf2 now\cf3 ())\par
+]\cf1 ;\par
+\cf10 void \cf9 _addNewTransaction\cf3 (String txTitle\cf10 ,\cf3 double txAmount)\{\par
+  \cf10 final  \cf3 newTx = \cf9 Transacao\cf3 (\par
+  title: txTitle\cf10 ,\par
+  \cf3 amount: txAmount\cf10 ,\par
+  \cf3 date:\cf9 DateTime\cf3 .\cf9 now\cf3 ()\cf10 ,\par
+  \cf3 id:\cf9 DateTime\cf3 .\cf9 now\cf3 ().toString())\cf10 ;\par
+\cf3\}\par
+\par
+\cf4 @override\par
+\cf0\par
+\par
+Nossa lista de transa\'e7\'f5es \'e9 do tipo final. Isso significa que ela n\'e3o pode ser atualizada ap\'f3s declarada. Na verdade fazemos isso, porque n\'e3o queremos que o flutter fique atualizando a estrutura o tempo todo consumindo processamento. E isso \'e9 importante. \par
+\par
+Para resolver sem perder a vantagem de ter a estrutura como final, iremos atualizar um apontador para a lista e depois iremos for\'e7ar sua atualiza\'e7\'e3o usando o setState. \par
+\par
+\cf1 void \cf2 _addNewTransaction\cf3 (String txTitle\cf1 ,\cf3 double txAmount)\{\par
+  \cf1 final  \cf3 newTx = \cf2 Transacao\cf3 (\par
+  title: txTitle\cf1 ,\par
+  \cf3 amount: txAmount\cf1 ,\par
+  \cf3 date:\cf2 DateTime\cf3 .\cf2 now\cf3 ()\cf1 ,\par
+  \cf3 id:\cf2 DateTime\cf3 .\cf2 now\cf3 ().toString())\cf1 ;\par
+ \par
+\highlight13   \cf3 setState(() \{\par
+    \cf6 transacoes\cf3 .add(newTx)\cf10 ;\par
+  \cf3\})\cf10 ;\cf1\par
+\cf3\highlight0\}\par
+\cf0\par
+\par
+Agora vamos conectar tudo isso. Volte ao main.dart e coloque o UserTransaction no container \par
+\par
+\cf3  \cf2 Container\cf3 (\par
+              width: double.\cf6\i\f1 infinity\cf1\i0\f0 ,\par
+              \cf3 child: \cf2 Card\cf3 (color: Colors.\cf6\i\f1 blue\cf1\i0\f0 , \cf3 child: \cf2 Text\cf3 (\cf5 'Gr\'e1fico'\cf3 ))\cf1 ,\par
+            \cf3 )\cf1 ,\par
+           \cf10  \cf9 UserTransaction\cf3 ()\par
+          ]))\cf1 ;\par
+\cf3\}\par
+\cf0\par
+\par
+- V\'e1 arquivo novastransacoes \par
+\par
+- Aqui precisamos passar uma fun\'e7\'e3o como par\'e2metro e o Dart permite isso.  \par
+\par
+- Esse caso o que queremos acessar \'e9 a fun\'e7\'e3o de adicionar a nova transa\'e7\'e3o. Ent\'e3o vamos criar aqui um apontador para a fun\'e7\'e3o e passa-lo como par\'e2metro no construtor. \par
+\par
+\cf1 class \cf3 NovasTransacoes \cf1 extends \cf3 StatelessWidget \{\par
+  \cf10 final \cf3 Function \cf6 addTx\cf10 ;\par
+\cf1   final \cf6 descritivoController \cf3 = \cf2 TextEditingController\cf3 ()\cf1 ;\par
+  final \cf6 gastoController \cf3 = \cf2 TextEditingController\cf3 ()\cf1 ;\par
+\par
+ \cf10  \cf3 NovasTransacoes(\cf10 this\cf3 .\cf6 addTx\cf3 )\cf10 ;\cf1\par
+\par
+  \cf4 @override\par
+\cf0\par
+- Agora inclua a chamada de adicionar  no bot\'e3o \par
+\par
+\cf2 FlatButton\cf3 (\par
+  child: \cf2 Text\cf3 (\cf5 'Add transaction'\cf3 )\cf1 ,\par
+  \cf3 textColor:Colors.\cf6\i\f1 purple\cf1\i0\f0 ,\par
+  \cf3 onPressed: ()\{\par
+    \cf19 // print(descritivo);\par
+     \cf6 addTx\cf3 (\cf6 descritivoController\cf3 .\cf6 text\cf10 ,\par
+         \cf3 double.\cf9\i\f1 parse\cf3\i0\f0 (\cf6 gastoController\cf3 .\cf6 text\cf3 ))\cf10 ;\par
+\cf1\par
+\par
+  \cf3\}\cf1 ,\par
+\cf0\par
+\par
+- Para que isso funcione precisamos alterar o construtor no user_transaction para receber a nossa fun\'e7\'e3o \par
+\par
+\cf4 @override\par
+\cf3 Widget \cf2 build\cf3 (BuildContext context) \{\par
+  \cf1 return \cf2 Column\cf3 (children:<Widget> [\par
+    \cf9 NovasTransacoes\cf3 (_addNewTransaction)\cf10 ,\cf1\par
+    \cf2 TransacoesWidget\cf3 (\cf6 transacoes\cf3 )]\cf1 ,\cf3 )\cf1 ;\par
+\cf3\}\par
+\cf0\par
+\par
+- Salve todos os arquivos e teste. \kerning1\par
+\kerning0\par
+\par
+\par
+}
+ 

@@ -1,0 +1,109 @@
+Pacotes necessários para configuração do ambiente de desenvolvimento móvel.
+
+Java SE 8
+https://www.oracle.com/java/technologies/javase-downloads.html#JDK8
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+
+Android Studio
+https://developer.android.com/studio#downloads
+https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-windows.zip
+
+Flutter
+https://flutter.dev/docs/get-started/install/windows
+
+
+Instalação:
+
+Neste exemplo eu irei instalar o ambiente de desenvolvimento no diretório D:\Dev.
+É importante que o ambiente seja instalado em uma pasta que não tenha nenhum espaço nem acento.
+A pasta deverá ter acesso de leitura e escrita para todos os perfis.
+
+
+1 - Instalar os aplicativos na seguinte ordem:
+	
+	1. JDK8
+	2. Adroid Studio
+	3. Flutter 
+	
+2 - Configurar as variáveis de ambiente (para todos os usuários):
+
+JAVA_HOME=D:\Dev\Java\jdk1.8
+JAVA_JRE=D:\Dev\Java\jre1.8
+
+
+3 - Adicionar ao Path (para todos os usuários):
+
+D:\Dev\Java\jdk1.8\bin;
+
+
+4 - Instalação do ambiente de desenvolvimento Móvel com Flutter:
+
+	
+	
+	2. Descomprimir flutter para a pasta:
+		D:\Dev
+		
+	3. Configurar as variáveis de ambiente (para todos os usuários):
+
+		ANDROID_HOME=D:\Dev\android_sdk
+		ANDROID_SDK_ROOT=D:\Dev\android_sdk
+		FLUTTER_HOME=D:\Dev\flutter
+
+	4. Adicionar ao Path (para todos os usuários):
+
+		D:\Dev\android_sdk\cmdline-tools\tools\bin;
+		D:\Dev\android_sdk\emulator;
+		D:\Dev\android_sdk\platform-tools;
+		D:\Dev\flutter\bin;
+
+5 - Configurar o SDK Manager (no Prompt de Comando):
+
+sdkmanager "build-tools;30.0.1" 
+sdkmanager "platform-tools"
+sdkmanager "platforms;android-30"
+sdkmanager ndk-bundle
+sdkmanager --licenses
+
+6 - Configurar o Flutter (no Prompt de Comando):
+
+flutter config --android-sdk %ANDROID_HOM
+flutter upgrade
+flutter config --enable-web
+flutter precache
+
+7 - Executar o Visual Studio Code e instalar a extensão chamada "Flutter".
+
+8 - Testar a instalação do Flutter:
+
+flutter doctor -v
+
+flutter doctor --android-licenses
+
+9 - Instalar o Android Studio:
+
+	1. Descomprimir o Android Studio na pasta D:\Dev
+	2. Iniciar o studio64.exe em D:\Dev\android-studio\bin
+	3. Selecionar para não importar configurações.
+	4. Selecionar o JDK já instalado em D:\Dev\Java\jdk1.8
+	5. Selecionar o android_sdk já instalado.
+	6. Instalar o Plugin do Flutter no MarketPlace
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

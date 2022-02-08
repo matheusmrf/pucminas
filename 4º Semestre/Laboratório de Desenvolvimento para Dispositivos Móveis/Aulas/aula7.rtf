@@ -1,0 +1,509 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica-Oblique;
+\f3\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red153\green168\blue186;\red32\green32\blue32;\red254\green187\blue91;
+\red88\green118\blue71;\red191\green100\blue38;\red133\green96\blue154;\red251\green0\blue7;\red255\green255\blue255;
+\red254\green187\blue91;\red32\green32\blue32;\red153\green168\blue186;\red191\green100\blue38;\red88\green118\blue71;
+\red86\green132\blue173;\red173\green169\blue32;\red191\green100\blue37;\red88\green118\blue71;\red153\green168\blue186;
+\red133\green96\blue154;\red253\green187\blue90;\red86\green133\blue173;\red109\green109\blue109;}
+{\*\expandedcolortbl;;\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c99608\c73333\c35686;
+\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c52157\c37647\c60392;\cssrgb\c99788\c11822\c0;\cssrgb\c100000\c100000\c100000;
+\csgenericrgb\c99608\c73333\c35686;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c34510\c46275\c27843;
+\csgenericrgb\c33725\c51765\c67843;\csgenericrgb\c67843\c66275\c12549;\cssrgb\c79921\c46957\c19137;\cssrgb\c41608\c52986\c34799;\cssrgb\c66409\c71889\c77838;
+\cssrgb\c59713\c46578\c66896;\cssrgb\c99879\c77611\c42650;\cssrgb\c40804\c59335\c73556;\csgenericrgb\c42745\c42745\c42745;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12740\viewh18880\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 A aula 6 a imagem n\'e3o carregou,  pois tinha uma , no final da linha \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \cb3 child: \cf4 Image\cf2 .\cf4 asset\cf2 (\cf5 'assets/imagens/banner.png'\cf6 ,\cf2 fit: BoxFit.\cf7 cover\cf6 ,\cf2 )\cf8 \cb9 ,\cf2 \cb3 \
+\
+Ent\'e3o \'e9 s\'f3 remover e salvar que vai funcionar kkkk. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1  \
+\
+O gr\'e1fico com os gastos semanais \'e9 um componente pago, por isso foi removido. Me perdoem eu n\'e3o me lembrava desse detalhe quando desenvolvi a aplica\'e7\'e3o de exemplo para voc\'eas. \'c9 poss\'edvel desenhar todas as barras e criar esse gr\'e1fico na m\'e3o por\'e9m iria levar muito tempo com algo que n\'e3o \'e9 t\'e3o relevante para o momento. \
+\
+\
+A aula 7 iniciaremos o uso do recurso de navega\'e7\'e3o \
+\
+Vamos aprender a criar menus de navega\'e7\'e3o global e alguns recurso de navega\'e7\'e3o interna dos aplicativos. \
+\
+Para ilustrar esse recurso vamos iniciar um novo aplicativo. \
+\
+- Crie um novo app para flutter na sua IDE \
+\
+Vamos criar um app de receitas \
+\
+- Rode o aplicativo no emulador para ter certeza de que tudo est\'e1 funcionado e que qualquer erro posterior \'e9 culpa sua kkkkk. \
+\
+J\'e1 que o aplicativo \'e9. De navega\'e7\'e3o obviamente teremos mais de uma p\'e1gina. Assim vamos iniciar criando essa nova p\'e1gina. \
+\
+Crie um arquivo .dart novo na pasta lib categories_screen \
+\
+Bom como os recursos aqui ser\'e3o est\'e1ticos iremos criar aqui uma arquivo com o conte\'fado est\'e1dios definidos no flutter.  \
+\
+- digit st e escolta stless para criar o padr\'e3o sem estados \
+\
+- inclua o nome das classes  CategorisScreen \
+\
+- Importe o pacote do flutter \cf6 \cb3 import \cf5 'package:flutter/material.dart'\cf6 ;\
+\cf0 \cb1 \
+O retorno desse arquivo ser\'e1 uma grade com itens a serem clicados e servirem como bot\'f5es de navega\'e7\'e3o.  Se fosse uma lisa usar\'edamos um listview, mas aqui iremos construir uma tabela com itens lado a lado.  Assim melhor utilizarmos um Grid. \
+\
+ - afrente do return vamos subistituir o Container pelo grid.  \cf4 \cb3 GridView\cf2 (children: <Widget>[]\cf6 ,\cf2 )\cf6 ;\
+\cf0 \cb1 \
+\
+Para garantir uma boa apar\'eancia ao nosso grid, vamos utilizar o gridDelegate ele ir\'e1 nos permitir configurar o n\'92\'fameo delias e colunas assim como espa\'e7amento entre elas e etc. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 \cb3 return 
+\f1 \cf10 \cb11 Scaffold\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf12 (\
+    appBar: \cf10 AppBar\cf12 (title: \cf13 const \cf10 Text\cf12 (\cf14 'DeliMeal'\cf12 ))\cf13 ,\
+\cf12 body:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf6 \cb3  \cf4 GridView\cf2 (children: <Widget>[]\cf6 ,\
+  \cf2 gridDelegate: \cf4 SliverGridDelegateWithMaxCrossAxisExtent\cf2 (\
+    maxCrossAxisExtent: \cf15 200\cf6 ,\cf2 childAspectRatio: \cf15 3\cf2 /\cf15 2\cf6 ,\
+  \cf2 crossAxisSpacing: \cf15 20\cf6 ,\
+  \cf2 mainAxisSpacing: \cf15 20\
+  \cf2 )\cf6 ,\
+\cf2 )\cf6 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+\
+Para preencher as categorias dos itens a serem listado no grid iremos utilizar uma classe. \
+\
+- Crie uma pasta models no pasta lib, isso \'e9 s\'f3 para separar o que \'e9 tela do que s\'e3o dados \
+- Nessa pasta criei o arquivo da classe que iremos utilizar para organizar os dados das categorias arquivo deve chamar category.dart\
+\
+Declare a classe abaixo dentro dele \
+ \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \cb3 \
+\cf6 import \cf5 'package:flutter/material.dart'\cf6 ;\
+\
+class \cf2 Category \{\
+  \cf6 final \cf2 String \cf7 id\cf6 ;\
+  final \cf2 String \cf7 title\cf6 ;\
+  final \cf2 Color \cf7 color\cf6 ;\
+\
+  \cf2 Category(\{\cf16 @required \cf6 this\cf2 .\cf7 id\cf6 , \cf16 @required \cf6 this\cf2 .\cf7 title\cf6 ,this\cf2 .\cf7 color\cf2 =Colors.
+\f2\i \cf7 orange
+\f0\i0 \cf2 \})\cf6 ;\
+\
+\cf2 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+- Agora vamos criar um arquivo .dart para armazenar as informa\'e7\'f5es das categorias \
+\
+- Na pasta lib crie um arquivo dummy_data.dart\
+\
+- Preencha. Arquivo com os dados das categorias desejadas \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 \cb3 import \cf5 'package:flutter/material.dart'\cf6 ;\
+\
+import \cf5 './models/category.dart'\cf6 ;\
+\
+const \cf2 DUMMY_CATEGORIES = \cf6 const \cf2 [\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c1'\cf6 ,\
+    \cf2 title: \cf5 'Italian'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 purple
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c2'\cf6 ,\
+    \cf2 title: \cf5 'Quick & Easy'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 red
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c3'\cf6 ,\
+    \cf2 title: \cf5 'Hamburgers'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 orange
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c4'\cf6 ,\
+    \cf2 title: \cf5 'German'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 amber
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c5'\cf6 ,\
+    \cf2 title: \cf5 'Light & Lovely'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 blue
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c6'\cf6 ,\
+    \cf2 title: \cf5 'Exotic'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 green
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c7'\cf6 ,\
+    \cf2 title: \cf5 'Breakfast'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 lightBlue
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c8'\cf6 ,\
+    \cf2 title: \cf5 'Asian'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 lightGreen
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c9'\cf6 ,\
+    \cf2 title: \cf5 'French'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 pink
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+  \cf4 Category\cf2 (\
+    id: \cf5 'c10'\cf6 ,\
+    \cf2 title: \cf5 'Summer'\cf6 ,\
+    \cf2 color: Colors.
+\f2\i \cf7 teal
+\f0\i0 \cf6 ,\
+  \cf2 )\cf6 ,\
+\cf2 ]\cf6 ;\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+Repare que est\'e1 apresentando erro no Category isso se deve ao fato de que a estrutura DUMMY_CATEGORIES \'e9 uma constante, n\'e3o pode ser alterada ap\'f3s ser criada, mas o construtor da classe n\'e3o \'e9. \
+\
+- Ent\'e3o vamos retornar a classe category e colocar cosnt a frente do m\'e9todo construtor\cb9  \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 const \cf2 \cb3 Category(\{\cf16 @required \cf6 this\cf2 .\cf7 id\cf6 , \cf16 @required \cf6 this\cf2 .\cf7 title\cf6 ,this\cf2 .\cf7 color\cf2 =Colors.
+\f2\i \cf7 orange
+\f0\i0 \cf2 \})\cf6 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+- Salve os arquivos e veja que o erro desapareceu. \
+\
+Volte ao arquivo repare que o GridView solicita uma.   Lista de Widgets e o que temos \'e9 uma lista de dados, ent\'e3o precisamos transformar nosso dados em objetos widgets \
+\
+- Vamos criar um arquivo separado para fazer isso, pois ficar\'e1 mais f\'e1cil dar manuten\'e7\'e3o posteriormente. \
+\
+-  Crie na pasta lib o arquivo category_item.dart \
+\
+- Abra o arquivo e digite st para criar uma class stateless \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 \cb9 import \cf18 'package:flutter/material.dart'\cf17 ;\cf6 \cb3 \
+\
+class \cf19 \cb9 CategoryItem \cf6 \cb3 extends \cf2 StatelessWidget \{\
+  \cf16 @override\
+  \cf2 Widget \cf4 build\cf2 (BuildContext context) \{\
+    \cf6 return \cf4 Container\cf2 ()\cf6 ;\
+  \cf2 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1  \
+Vamos tamb\'e9m declarar nossas vari\'e1veis locais e o construtor da classe \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \cb3 \
+\cf6 class \cf2 CategoryItem \cf6 extends \cf2 StatelessWidget \{\
+ \cf19 \cb9  \cf17 final \cf19 String \cf20 title\cf17 ;\
+  final \cf19 Color \cf20 color\cf17 ;\
+  \cf19 CategoryItem( \cf17 this\cf19 .\cf20 title\cf17 ,this\cf19 .\cf20 color\cf19 )\cf17 ;\cf6 \cb3 \
+  \cf16 @override\
+  \cf2 Widget \cf4 build\cf2 (BuildContext context) \{\
+    \cf6 return \cf4 Container\cf2 ()\cf6 ;\
+  \cf2 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+Agora vamos criar o nosso objeto widget para devolver a categoria screen. \'c9 uma boa oportunidade aqui para conhecermos um pouco mais sobre como formatar os objetos. Vamos usar o Container mesmo, visto que ele nos d\'e1 mais flexibilidade para trabalhar com alinhamentos, espa\'e7amentos e etc. E aproveitando aqui iremos aprender um pouco mais sare os recursos da propriedade decoration.  \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \cb3   \cf16 @override\
+  \cf2 Widget \cf4 build\cf2 (BuildContext context) \{\
+    \cf6 return \cf21 \cb9 Container\cf19 (\
+        padding: \cf17 const \cf21 EdgeInsets\cf19 .\cf21 all\cf19 (\cf22 15\cf19 )\cf17 ,\
+        \cf19 child: \cf21 Text\cf19 (\cf20 title\cf19 )\cf17 ,\
+        \cf19 decoration: \cf21 BoxDecoration\cf19 (\
+            gradient: \cf21 LinearGradient\cf19 (\
+          colors: [\cf20 color\cf19 .withOpacity(\cf22 0.7\cf19 )\cf17 ,\
+          \cf20 color\cf17 ,\cf19 ]\cf17 ,\
+              \cf19 begin: Alignment.
+\f2\i \cf20 topLeft 
+\f0\i0 \cf17 ,\
+              \cf19 end: Alignment.
+\f2\i \cf20 bottomRight\
+        
+\f0\i0 \cf19 )\cf17 ,\
+        \cf19 borderRadius: \cf21 BorderRadius\cf19 .\cf21 circular\cf19 (\cf22 15\cf19 )))\cf17 ;\cf6 \cb3 \
+  \cf2 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+Ent\'e3o agora que temos tudo, os dados e objetos widgets \'e9 hora de criar o grid de op\'e7\'f5es. \
+\
+- volte ao arquivo categories_screen.dart   \
+\
+- Agora vamos mapear os dados dentro Grid. Para isso iremos importar as outras classes para esse arquivo e usar o map para gerar os widget do menu.  \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb9 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 import \cf18 './dummy_data.dart'\cf17 ;\
+import \cf18 './models/category_item.dart'\cf17 ;\cf6 \cb3 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \cb3 Widget \cf4 build\cf2 (BuildContext context) \{\
+  \cf6 return \cf4 GridView\cf2 (\
+   \cf19 \cb9  children: DUMMY_CATEGORIES.map((catData) =>\
+\
+        \cf21 CategoryItem\cf19 (catData.\cf20 title\cf17 ,\cf19 catData.\cf20 color\cf19 )).toList()\cf17 ,\cf6 \cb3 \
+    \cf2 gridDelegate: \cf4 SliverGridDelegateWithMaxCrossAxisExtent\cf2 (\
+      maxCrossAxisExtent: \cf15 200\cf6 ,\cf2 childAspectRatio: \cf15 3\cf2 /\cf15 2\cf6 ,\
+    \cf2 crossAxisSpacing: \cf15 20\cf6 ,\
+    \cf2 mainAxisSpacing: \cf15 20\
+    \cf2 )\cf6 ,\
+  \cf2 )\cf6 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1  \
+Calma que estamos quase l\'e1 para ver o resultado disso tudo. Agora falta dizer ao flutter que o arquivo categories_screen \'e9 a p\'e1gina principal da sua aplica\'e7\'e3o. \
+\
+- volte ao arquivo main.dart \
+\
+- importe a classe categories_screen \
+\
+- Na propriedade home: chame o construtor da categories_screen  CategoriesScreen()\
+\
+- Apague o restante das linhas do main.dart que estavam criando a p\'e1gina principal \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 \cb3 import \cf5 'package:flutter/material.dart'\cf6 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 \cb9 import \cf18 'categories_screen.dart'\cf17 ;\cf6 \cb3 \
+\
+void \cf4 main\cf2 () \{\
+  runApp(\cf4 MyApp\cf2 ())\cf6 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \}\
+\
+\cf6 class \cf2 MyApp \cf6 extends \cf2 StatelessWidget \{\
+  \cf23 // This widget is the root of your application.\
+  \cf16 @override\
+  \cf2 Widget \cf4 build\cf2 (BuildContext context) \{\
+    \cf6 return \cf4 MaterialApp\cf2 (\
+      title: \cf5 'Flutter Demo'\cf6 ,\
+      \cf2 theme: \cf4 ThemeData\cf2 (\
+\
+        primarySwatch: Colors.
+\f2\i \cf7 blue
+\f0\i0 \cf6 ,\
+        \cf2 visualDensity: VisualDensity.
+\f2\i \cf7 adaptivePlatformDensity
+\f0\i0 \cf6 ,\
+      \cf2 )\cf6 ,\
+      \cf2 home: \cf21 \cb9 CategoriesScreen\cf19 ()\
+\cf2 \cb3     )\cf6 ;\
+  \cf2 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+- Vamos criar agora um novo arquivo category_meal_screen.dart para ser a tela que ir\'e1 exibir cada uma das receitas.  \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 import \cf5 'package:flutter/material.dart'\cf6 ;\
+\
+class \cf2 CategoryMealsScreen \cf6 extends \cf2 StatelessWidget \{\
+  \cf16 @override\
+  \cf2 Widget \cf4 build\cf2 (BuildContext context) \{\
+    \cf6 return \cf4 Scaffold\cf2 (\
+      appBar: \cf4 AppBar\cf2 (title: \cf4 Text\cf2 (\cf5 'Receita'\cf2 )\cf6 ,\cf2 )\cf6 ,\
+        \cf2 body: \cf4 Center\cf2 (\
+          child: \cf4 Text\cf2 (\cf5 'categoria da receita'\cf2 )\cf6 ,\
+        \cf2 )\
+    )\cf6 ;\
+  \cf2 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+\
+Bom agora precisamos que os itens de menu sejam toc\'e1veis para abrir as p\'e1ginas das receitas. \
+\
+- Volte ao arquivo category_item os iremos incluir o INKWELL para que seja poss\'edvel tocar no item e ele no envie a outra p\'e1gina. \
+\
+- IrIemos fazer diversas modifica\'e7\'f5es nessa p\'e1gina desde inserir a a\'e7\'e3o de clicar at\'e9 navegar at\'e9 a pr\'f3xima p\'e1gina \
+\
+- \'c9 importante. Entender que as telas no. Android funcionam com uma pilha e que voc\'ea como desenvolvedor tem total controle sobre a pilha do seu aplicativo. Ent\'e3o voc\'ea pode desde incluir uma nova janela na pilha vou at\'e9 mesmo inclua uma nova removendo as anteriores por exemplo para evitar que o usu\'e1rio retorne. Nesse exemplo utilizaremos o objetivo Navigator para controlar essa pilha de p\'e1ginas e para isso teremos que fazer um bom control de contexto., pois iremos permitir o retorno no usu\'e1rio para a tela anterior e isso \'e9 importante para que a aplica\'e7\'e3o saiba de onde veio. Usaremos o MaterialPageRouter para conseguirmos flexibilizar o tipo de tema utilizado que na aplica\'e7\'e3o assim independente de est\'e1 utilizando o tema padr\'e3o para Android ou para IOS ele ir\'e1  funcionar. \
+\
+- va para o arquivo category_item.dart\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 import \cf5 'package:flutter/material.dart'\cf6 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 \cb9 import \cf18 'package:navegao/category_meals_screen.dart'\cf17 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 \cb3 \
+class \cf2 CategoryItem \cf6 extends \cf2 StatelessWidget \{\
+  \cf6 final \cf2 String \cf7 \cb3 title\cf6 \cb3 ;\
+  final \cf2 Color \cf7 \cb3 color\cf6 \cb3 ;\
+\
+  \cf2 CategoryItem(\cf6 this\cf2 .\cf7 \cb3 title\cf6 \cb3 , this\cf2 .\cf7 \cb3 color\cf2 \cb3 )\cf6 ;\
+ \cf17 \cb9  void \cf21 selectCategory\cf19 (BuildContext ctx)\{\
+    Navigator.
+\f3\i \cf21 of
+\f1\i0 \cf19 (ctx).push(\cf21 MaterialPageRoute\cf19 (\
+      builder: (_)\{\
+        \cf17 return \cf21 CategoryMealsScreen\cf19 ()\cf17 ;\
+      \cf19 \}\cf17 ,\
+    \cf19 )\cf17 ,\cf19 )\cf17 ;\
+  \cf19 \}\
+\cf2 \cb3   \cf16 @override\
+  \cf2 Widget \cf4 build\cf2 (BuildContext context) \{\
+    \cf6 return \cf21 \cb9 InkWell\cf19 (\
+      onTap: ()=>selectCategory(context)\cf17 ,\
+        \cf19 splashColor: Theme.
+\f3\i \cf21 of
+\f1\i0 \cf19 (context).\cf20 primaryColor\cf17 ,\
+        \cf19 borderRadius: \cf21 BorderRadius\cf19 .\cf21 circular\cf19 (\cf22 15\cf19 )\cf17 ,\
+        \cf19 child:\cf2 \cb3  \cf4 Container\cf2 (\
+        padding: \cf6 const \cf4 EdgeInsets\cf2 .\cf4 all\cf2 (\cf15 \cb3 15\cf2 \cb3 )\cf6 ,\
+        \cf2 child: \cf4 Text\cf2 (\cf7 \cb3 title\cf2 \cb3 )\cf6 ,\
+        \cf2 decoration: \cf4 BoxDecoration\cf2 (\
+            gradient: \cf4 LinearGradient\cf2 (\
+          colors: [\cf7 \cb3 color\cf2 \cb3 .withOpacity(\cf15 \cb3 0.7\cf2 \cb3 )\cf6 ,\
+          \cf7 \cb3 color\cf6 \cb3 ,\cf2 ]\cf6 ,\
+              \cf2 begin: Alignment.
+\f3\i \cf7 \cb3 topLeft 
+\f1\i0 \cf6 \cb3 ,\
+              \cf2 end: Alignment.
+\f3\i \cf7 \cb3 bottomRight\
+        
+\f1\i0 \cf2 \cb3 )\cf6 ,\
+        \cf2 borderRadius: \cf4 BorderRadius\cf2 .\cf4 circular\cf2 (\cf15 \cb3 15\cf2 \cb3 )))\
+    \cf19 \cb9 )\cf17 ;\cf6 \cb3 \
+  \cf2 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+-  Com isso voc\'ea poder\'e1 clicar nos itens do grid e eles agora lhe encaminham para a p\'e1gina que ir\'e1 exibir as informa\'e7\'f5es das categorias . \
+\
+- Salve a aplica\'e7\'e3o e teste .\
+\
+\
+Agora precisamos passar as informa\'e7\'f5es da categoria selecionada para a p\'e1gina de categoria que ir\'e1 fazer com que ela exiba as informa\'e7\'f5es corretas. \
+\
+- Ainda no arquivo category_item podemos modificar no construtor para receber o ID, pois assim poderemos encontrar em nossa estrutura a receita desejada. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \cb3 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf6 class \cf2 CategoryItem \cf6 extends \cf2 StatelessWidget \{\
+ \cf19 \cb9  \cf17 final \cf19 String \cf20 id\cf17 ;\cf6 \cb3 \
+  final \cf2 String \cf7 \cb3 title\cf6 \cb3 ;\
+  final \cf2 Color \cf7 \cb3 color\cf6 \cb3 ;\
+\
+  \cf2 CategoryItem(\cf17 \cb9 this\cf19 .\cf20 id\cf6 \cb3 ,this\cf2 .\cf7 \cb3 title\cf6 \cb3 , this\cf2 .\cf7 \cb3 color\cf2 \cb3 )\cf6 ;\
+  void \cf4 selectCategory\cf2 (BuildContext ctx)\{\
+    Navigator.
+\f3\i \cf4 \cb3 of
+\f1\i0 \cf2 \cb3 (ctx).push(\cf4 MaterialPageRoute\cf2 (\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+- agora precisamos que o Categories_screen nos envie tamb\'e9m esse ID. \
+\
+- Va ao arquivo. categories_screen \
+\
+- inclua o ID na chamada do construtor do CategoryItem \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 children: DUMMY_CATEGORIES.map((catData) =>\
+\
+    \cf4 CategoryItem\cf2 (\cf19 \cb9 catData.\cf20 id\cf17 ,\cf2 \cb3 catData.\cf7 title\cf6 ,\cf2 catData.\cf7 color\cf2 )).toList()\cf6 ,\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+\
+- Volte ao categori_item \
+\
+- Inclua as informa\'e7\'f5es de ID e titulo no retorno do CategoryMealsScreen \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 void \cf4 selectCategory\cf2 (BuildContext ctx)\{\
+  Navigator.
+\f3\i \cf4 \cb3 of
+\f1\i0 \cf2 \cb3 (ctx).push(\cf4 MaterialPageRoute\cf2 (\
+    builder: (_)\{\
+      \cf6 return \cf4 CategoryMealsScreen\cf2 (\cf20 \cb9 id\cf17 ,\cf20 title\cf2 \cb3 )\cf6 ;\
+    \cf2 \}\cf6 ,\
+  \cf2 )\cf6 ,\cf2 )\cf6 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+\
+- Agora precisamos atualizar  o construtor do categoryMeasScreen \
+\
+- Va at\'e9. O arquivo caterory_meals_screen e inclua as linhas abaixo \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 class \cf2 CategoryMealsScreen \cf6 extends \cf2 StatelessWidget \{\
+  \cf17 \cb9 final \cf19 String \cf20 categoryId\cf17 ;\
+  final \cf19 String \cf20 categoryTitle\cf17 ;\
+  \cf19 CategoryMealsScreen(\cf17 this\cf19 .\cf20 categoryId\cf17 ,this\cf19 .\cf20 categoryTitle\cf19 )\cf17 ;\
+\cf6 \cb3   \cf16 @override\
+  \cf2 Widget \cf4 build\cf2 (BuildContext context) \{\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+\
+Agora que j\'e1 temos as informa\'e7\'f5es aqui podemos exibir essas informa\'e7\'f5es nos espa\'e7os aqui da. Tela \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 Widget \cf4 build\cf2 (BuildContext context) \{\
+  \cf6 return \cf4 Scaffold\cf2 (\
+    appBar: \cf4 AppBar\cf2 (title: \cf21 \cb9 Text\cf19 (\cf20 categoryTitle\cf19 )\cf2 \cb3 )\cf6 ,\
+      \cf2 body: \cf4 Center\cf2 (\
+        child: \cf4 Text\cf2 (\cf5 'categoria da receita'\cf2 )\cf6 ,\
+      \cf2 )\
+  )\cf6 ;\
+\cf2 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+- Salve e teste. Ao clicar ele ir\'e1 abrir a tela e na barra de app ser\'e1 exibido o t\'edtulo da categoria. \
+\
+\
+\
+\
+}
