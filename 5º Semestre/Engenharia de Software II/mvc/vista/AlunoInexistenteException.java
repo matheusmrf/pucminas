@@ -10,5 +10,8 @@ package mvc.vista;
  * @author 110068
  */
 public class AlunoInexistenteException {
+    public AlunoInexistenteException(String dre){
+        throw new UnsupportedOperationException("Aluno inexistente");
+    }
     
 }

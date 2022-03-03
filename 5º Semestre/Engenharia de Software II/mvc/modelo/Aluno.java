@@ -5,10 +5,40 @@
  */
 package mvc.modelo;
 
+import java.util.Date;
+
 public class Aluno implements java.io.Serializable{
 private static final long serialVersionUID = 1L;
 private String dre;
 private String nome;
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public Date getData_Nasc() {
+        return Data_Nasc;
+    }
+
+    public void setData_Nasc(Date data_Nasc) {
+        Data_Nasc = data_Nasc;
+    }
+
+private String telefone;
+private String endereco;
+private Date Data_Nasc;
 public Aluno(String dre, String nome) {
 super();
 this.dre = dre;

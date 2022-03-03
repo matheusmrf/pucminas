@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
@@ -25,12 +26,13 @@ import mvc.controle.ControladorAlunoSerializado;
 import mvc.controle.DreDuplicadoException;
 
 public class GuiSimplesSalvando {
-private String dre, nome;
+private String dre, nome, telefone, endereco;
+private Date dataNasc;
 private JFrame janela;
-private JPanel painelGeral, pCentro, pDisplay, pDre, pNome, pBotoes, pMensagem;
-private JLabel labelDre, labelNome, labelMensagem;
+private JPanel painelGeral, pCentro, pDisplay, pDre, pNome, pTelefone, pEndereco, pDataNasc, pBotoes, pMensagem;
+private JLabel labelDre, labelNome, labelTelefone, labelEndereco, labelDataNasc, labelMensagem;
 private JButton botCriar, botObterNome, botSalvar, botLimpar;
-private JTextField tfDre, tfNome, tfMensagem;
+private JTextField tfDre, tfNome, tfTelefone, tfEndereco, tfDataNasc, tfMensagem;
 private ControladorAlunoSerializado controlador =
  ControladorAlunoSerializado.getControladorAlunoSerializado();
 public GuiSimplesSalvando() {
@@ -40,19 +42,46 @@ pCentro = new JPanel(new BorderLayout());
 pDisplay = new JPanel(new GridLayout(2,1));
 pDre = new JPanel();
 pNome = new JPanel();
+pTelefone = new JPanel();
+pEndereco = new JPanel();
+pDataNasc = new JPanel();
 pDre.setLayout(new FlowLayout(FlowLayout.LEFT));
 pNome.setLayout(new FlowLayout(FlowLayout.LEFT));
+pTelefone.setLayout(new FlowLayout(FlowLayout.LEFT));
+pEndereco.setLayout(new FlowLayout(FlowLayout.LEFT));
+pDataNasc.setLayout(new FlowLayout(FlowLayout.LEFT));
 pDisplay.add(pDre);
 pDisplay.add(pNome);
+pDisplay.add(pTelefone);
+pDisplay.add(pEndereco);
+pDisplay.add(pDataNasc);
+//DRE
 labelDre = new JLabel("DRE: ");
 pDre.add(labelDre);
 tfDre = new JTextField(10);
 tfDre.addKeyListener(new OuvinteTfDre());
 pDre.add(tfDre);
+//Nome
 labelNome = new JLabel("Nome: ");
 pNome.add(labelNome);
 tfNome = new JTextField(30);
 pNome.add(tfNome);
+//Telefone
+labelTelefone = new JLabel("Telefone: ");
+pTelefone.add(labelTelefone);
+tfTelefone = new JTextField(30);
+pTelefone.add(tfTelefone);
+//Endereco
+labelEndereco = new JLabel("Endereco: ");
+pEndereco.add(labelEndereco);
+tfEndereco = new JTextField(30);
+pEndereco.add(tfEndereco);
+//Data Nascimento
+labelDataNasc = new JLabel("Data de Nascimento: ");
+pDataNasc.add(labelDataNasc);
+tfDataNasc = new JTextField(30);
+pDataNasc.add(tfDataNasc);
+// Botões
 pBotoes = new JPanel();
 botCriar = new JButton("Criar Aluno");
 botCriar.addActionListener(new OuvinteCriar());
@@ -123,11 +152,10 @@ public void actionPerformed(ActionEvent aev){
     try {
         dre = tfDre.getText();
         nome = controlador.getAluno(dre).getNome();
+        telefone = controlador.get
         tfMensagem.setText("O aluno com DRE = " + dre + " chama-se " +
-                nome);
+                nome + ", nasceu em: " + dataNasc + " reside em: " + endereco + " e seu telefone é: " + telefone);
     } catch (mvc.controle.AlunoInexistenteException ex) {
-        tfMensagem.setText
-                ("Não foi possível pesquisar o aluno. O DRE " + dre + " não existe.");
     }
 }
 }

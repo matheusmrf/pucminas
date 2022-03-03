@@ -48,5 +48,6 @@ alunos = (HashMap<String, Aluno>)objeto;
 public void limparDados(){
 // destroi todos os dados da memória
 alunos = new HashMap<String, Aluno>();
+alunos.clear();
 }
 }

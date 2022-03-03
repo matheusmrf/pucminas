@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d66fd85-10e6-46aa-82e4-6a7121511747" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../4º Semestre/Inteligência Artificial/Exercício_01_Busca.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4º Semestre/Inteligência Artificial/Exercício_01_Busca.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4º Semestre/Inteligência Artificial/Exercício_01_Busca.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4º Semestre/Inteligência Artificial/Exercício_01_Busca.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alunos.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mvc/mvc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mvc/mvc/alunos.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando$OuvinteLimpar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando$OuvinteLimpar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando$OuvinteObterNome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando$OuvinteObterNome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando$OuvinteSalvar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando$OuvinteSalvar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mvc/mvc/vista/GuiSimplesSalvando.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/GuiSimplesSalvando.java" beforeDir="false" afterPath="$PROJECT_DIR$/vista/GuiSimplesSalvando.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25lR3jbuZfGJDHCEEP38CBtWvnO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mvc.vista.GuiSimplesSalvando" />
+      <module name="mvc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d66fd85-10e6-46aa-82e4-6a7121511747" name="Changes" comment="" />
+      <created>1646099506085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646099506085</updated>
+      <workItem from="1646099511233" duration="157000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
