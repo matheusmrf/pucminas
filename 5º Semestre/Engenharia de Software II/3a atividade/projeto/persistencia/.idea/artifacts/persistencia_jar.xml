@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="persistencia:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/persistencia_jar</output-path>
+    <root id="archive" name="persistencia.jar">
+      <element id="module-output" name="persistencia" />
+      <element id="library" level="project" name="mysql-connector-java-5.1.23-bin" />
+    </root>
+  </artifact>
+</component>
